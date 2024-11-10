@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Font Awesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Responsive Header</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style1.css" />
+    <link rel="stylesheet" href="./css/style2.css" />
+
+
+    <!-- <link rel="stylesheet" href="./css/Responsive.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
+
+
+    <!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+<!-- jQuery (required by Owl Carousel) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+        </head>
+
+   <body>
+
+
+    <div class="top-bar">
+      <div class="left-section">
+        <div class="since" style="color: #cc0000;">Since: 2007</div>
+        <div class="double-vertical-line">
+          <div class="vertical-line"></div>
+          
+        </div>
+      </div>
+    
+      <div class="right-section">
+        <div class="contact-info">
+          <span><i class="fa fa-space"></i> +91 9818333866</span>
+          <div class="double-vertical-line">
+            <div class="vertical-line"></div>
+          </div>
+          <span><i class="fa fa-space"></i> sunriseipr@gmail.com</span>
+        </div>
+        <div class="icon-group">
+          <i class="fa fa-space" style="padding: 2px;"></i>
+          <i class="fa fa-space" style="padding: 3px;"></i>
+          <i class="fa fa-space" style="padding: 4px;"></i>
+        </div>
+      </div>
+    </div>
+    
+
+
+
+        <!-- Header -->
+        <header class="header">
+          <img src="./image/logo.jpeg" alt="Sunrise Logo" class="logo" />
+        
+          <!-- Hamburger Icon for Mobile -->
+          <div id="hamburger-icon" class="hamburger-icon" onclick="toggleMenu()">☰</div>
+        
+          <!-- Close Icon for Mobile -->
+          <div id="close-icon" class="close-icon" onclick="toggleMenu()" style="display: none;">✕</div>
+        
+          <!-- Navigation Menu -->
+          <nav>
+              <ul id="nav-links" class="nav-links">
+                  <li><a href="index.html" class="">Home</a></li>
+                  <li><a href="About.html">About</a></li>
+                  <li class="dropdown">
+                      <a href="blog.html" class="dropbtn">Practice Areas</a>
+                      <div class="dropdown-content">
+                          <a href="trademark-registration.html">Trademark Registration</a>
+                          <a href="Design.html">Design</a>
+                          <a href="Copyright.html">Copyright</a>
+                          <a href="iso.html">ISO</a>
+                          <a href="Fssal.html">FSSAI (Food Licence)</a>
+                          <a href="Msme.html">Pvt. Ltd, MSME/Udyam Reg.</a>
+                      </div>
+                  </li>
+                  <li><a href="blog.html">IP News & Events</a></li>
+                  <li><a href="Careers.html">Careers</a></li>
+                  <li><a href="ContactUs.html">Contact Us</a></li>
+              </ul>
+          </nav>
+        
+
+
+
+          
+          <!-- Enquiry Button -->
+          <div class="button-container">
+              <button class="enquiry-button">Enquiry Now</button>
+          </div>
+        </header>
+        
+
+<!-- Enquiry Modal -->
+<div id="enquiryModal" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 class="form-heading">Enquiry Now</h2>
+
+      <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Enter name">
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Enter email">
+
+          <label for="mobile">Mobile No. :</label>
+          <input type="text" id="mobile" placeholder="Enter mobile no.">
+
+          <label for="service">Choose Service :</label>
+          <select id="service">
+              <option>Select Your Service</option>
+              <option>Service 1</option>
+              <option>Service 2</option>
+          </select>
+
+          <label for="message">Message :</label>
+          <textarea id="message" placeholder="Write Your Message ..."></textarea>
+
+         <button type="submit">Submit</button>
+      </form>
+  </div>
+</div>
+
+ <!-- main-header end -->
+
+ <!-- Page Title -->
+
+ <section class="page-title" style="background-image: url(./image/download-bg.jpg);">
+
+  <div class="auto-container">
+
+      <div class="content-box">
+
+          <center><div class="title centred">
+
+              <h1>COPYRIGHT
+
+          </div></center>
+
+          <ul class="bread-crumb clearfix">
+
+              <li><a href="#">Home</a></li>
+
+              <li>Copyright</li>
+
+          </ul>
+
+      </div>
+
+  </div>
+
+</section>
+
+
+ <!-- Page Title -->
+
+
+ <!-- about-style-three -->
+
+ <section class="about-style-three bg-color-1" style="font-family:Times New Roman">
+
+    <div class="auto-container">
+
+        <div class="row clearfix .align-items-center">                   
+
+            <div class="col-lg-7 col-md-7 col-sm-12 content-column">
+
+                <div class="content_block_5">
+                
+
+                    <div class="content-box">
+
+                        <div class="sec-title">
+                            
+                            <h3>Copyright</h3>
+
+                            <div class="title-shape"></div>
+
+                        </div>
+
+                     
+
+                        <div class="text">                                  
+                            <p>A copyright gives exclusive rights to persons who create original works of authorship, including literary, dramatic, musical, artistic and other intellectual works.</p>
+                            
+                            <img src="./image/cart/Copyright.jpg" alt="">
+                            
+                        </div>												
+
+                    </div>                                    
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-5 col-md-5 col-sm-12 content-column">
+
+                <div class="content_block_5">
+                    <div class="content-box form-box">
+
+                        <div class="sec-title">                                
+
+                            <h3>Enquiry Now</h3>                                   
+
+                        </div>
+
+                     
+
+                        <div class="text">
+                          <form method="post" action="mailer.php">
+                                <div class="form-group .appoint-form">
+                                <label for="name" style="color:#fff; font-family:'Merriweather Sans', sans-serif;">Name:</label>
+                                    <input type="name" class="form-control" id="name" placeholder="Enter name" name="name" required>
+                                </div>
+
+                                <div class="form-group .appoint-form">
+                                <label for="email" style="color:#fff; font-family:'Merriweather Sans', sans-serif;">Email:</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                </div>
+
+                                <div class="form-group .appoint-form">
+                                <label for="mobile" style="color:#fff; font-family:'Merriweather Sans', sans-serif;">Mobile No. :</label>
+                                    <input type="text" class="form-control" id="mobile" placeholder="Enter mobile no." name="number" required>
+                                </div>
+<!-- 
+                                <div class="form-group .appoint-form">
+                                <label for="mobile" style="color:#fff; font-family:'Merriweather Sans', sans-serif;">Choose Service :</label>
+                                    <select name="service">
+                                        <option value="Copyright">Copyright</option>
+                                    </select>
+                                </div> -->
+
+                                
+                                <div class="form-group .appoint-form">
+                                <label for="mobile" style="color:#fff; margin-top: 1rem; font-family:'Merriweather Sans', sans-serif;">Message :</label>                    
+                                    <textarea name="msg" placeholder="Write Your Message ..." class="message-textarea"></textarea>
+                                </div>       
+                                
+                                <div class="appoint-submit" style="text-align: center;">    
+                                    <button type="submit" class="appointment-submit" name="submit">Submit</button>
+                                </div>
+
+                            </form>                                    
+                        </div>												
+
+                    </div>                                    
+
+                </div>
+
+            </div>                   
+
+        </div>
+        
+        
+        
+        
+        
+        <div class="row clearfix .align-items-center">                   
+
+            <div class="col-lg-12 col-md-12 col-sm-12 content-column">
+
+                <div class="content_block_5">
+                
+
+                    <div class="content-box">
+
+                        <div class="sec-title">
+                            <div class="sec-title">
+                                <p>The following are the different types of copyrights available in India.</p>
+                        </div>
+
+                        </div>
+
+                        <div class="text bullets-points">                                  
+                            <p style="color: #ff3334;"><strong> Literary Works. Copyrights under this category cover works that include the original or unique creation of literature. ...</strong></p>
+                            <p style="color: #ff3334;"><strong> Dramatic Works. This is also a form of literary work. ...</strong></p>
+                            <p style="color: #ff3334;"><strong> Musical Works. ...</strong></p>
+                            <p style="color: #ff3334;"><strong> Artistic Works. ...</strong></p>
+                            <p style="color: #ff3334;"><strong> Cinematograph Films. ...</strong></p>
+                            <p style="color: #ff3334;"><strong> Sound Recording.</strong></p>
+                        </div>												
+
+                    </div>                                    
+
+                </div>
+
+            </div>
+
+        </div>
+        
+        
+        <div class="row clearfix .align-items-center">                   
+
+            <div class="col-lg-12 col-md-12 col-sm-12 content-column">
+
+                <div class="content_block_5">
+                
+
+                    <div class="content-box">
+
+                        <div class="sec-title">
+                            
+                            <h3>What are the different types of copyright?</h3>
+
+                            <div class="title-shape"></div>
+
+                        </div>
+                        
+                        <div class="sec-title">
+                            <h6><i class="flaticon-sunny-day-or-sun-weather"></i><span><strong>Public Performing Right</strong></span></h6>
+                            <p>Granted by U.S. Copyright Law, the public performing right is the exclusive right of the copyright owner to authorize the performance or transmission of a copyrighted work in public.</p>
+                        </div>
+                        
+                        
+                        <div class="sec-title">
+                            <h6><i class="flaticon-sunny-day-or-sun-weather"></i><span>Public Performance License</span></h6>
+                                <p>BMI issues licenses on behalf of the copyright owner or the copyright owner’s agent granting the right to perform the work in or transmit the work to the public.</p>
+                        </div>
+                        
+                        <div class="sec-title">
+                            <h6><i class="flaticon-sunny-day-or-sun-weather"></i><span>Reproduction Right</span></h6>
+                                <p>Granted by U.S. Copyright Law, the reproduction right is the exclusive right of the copyright owner to authorize the reproduction of a copyrighted musical work, as in CDs, records, tapes, ringtones, permanent digital downloads, and interactive streams.</p>
+                        </div>
+                        
+                        <div class="sec-title">
+                            <h6><i class="flaticon-sunny-day-or-sun-weather"></i><span>Mechanical Licenses</span></h6>
+                                <p>The Mechanical Licensing Collective administers blanket licenses on behalf of copyright owners to eligible streaming and download services (digital service providers or DSP’s) in the United States.</p>
+                        </div>
+                        
+                        <div class="sec-title">
+                            <h6><i class="flaticon-sunny-day-or-sun-weather"></i><span>Synchronization License</span></h6>
+                                <p>Copyright owners, usually a music publisher, issues a synchronization license, usually to a producer or other visual media creator, granting the right to synchronize (“sync”) a musical composition to visual images on film or video (on film, tv shows, advertisements, online videos, etc.).</p>
+                        </div>
+
+                    </div>                                    
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- about-style-three end -->
+
+
+
+   <!-- Years of experiance Section Start -->
+   <section class="experience-section section-padding">
+    <div class="container">
+        <div class="section-title text-center">
+            <h2>15 Years Of Experience As An Attorney Firm</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="content text-center">
+                    <p>The firm: SUNRISE TRADE MARK CO. is a full-service intellectual property and technology law firm focused<br> on rendering business-friendly legal advice.</p>
+                </div>
+                <div class="section-subtitle text-center">
+                    <h3>2007</h3>
+                    <h6>
+                        <i class="fas fa-sun"></i>
+                        <span> COMPANY ESTABLISHED </span>
+                        <i class="fas fa-sun"></i>
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Years of experiance Section End   -->
+
+
+
+
+
+
+
+        <!-- Footer Section -->
+        <div class="footer">
+          <!-- About Us Section -->
+          <div>
+            <h3>About Us</h3>
+            <p>
+              ‘A diverse and dynamic group‘, SUNRISE TRADE MARK CO. is a top flight
+              practice that protects and enforces IP assets from filing and
+              prosecuting patent and trade mark applications, through to IP
+              litigation, often concerning landmark cases.
+            </p>
+          </div>
+
+          <!-- Quick Links Section -->
+          <div>
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="trademark-registration.html">Trademark Registration</a></li>
+              <li><a href="Copyright.html">Copyright</a></li>
+              <li><a href="Design.html">Design</a></li>
+              <li><a href="iso.html">ISO</a></li>
+              <li><a href="Fssal.html">FSSAI (Food Licence)</a></li>
+              <li><a href="Msme.html">Pvt. Ltd, MSME/Udyam Reg.</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Us Section -->
+          <div>
+            <h3>Contact Us</h3>
+            <p>
+              <strong>Location</strong><br />Block B-4, Sunrise House, Gali No.-9,
+              Harsh Vihar, New Delhi-93
+            </p>
+            <p><strong>Phone</strong><br />+91 9818383866</p>
+            <p><strong>Email</strong><br />sunriseipr@gmail.com</p>
+          </div>
+
+          <!-- Enquiry Box Section -->
+          <div class="enquiry-box">
+            <h4>Enquiry Your Query</h4>
+            <p>Here you can enquire about issues and make requests.</p>
+            <button>ENQUIRY NOW</button>
+          </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="footer-copyright">
+          &copy; 2022 By <a href="#">Sunrise Trademark Co.</a> All Rights Reserved.
+        </div>
+
+        <!-- Font Awesome for icons (optional, include if you want icons in contact info) -->
+        <script
+          src="https://kit.fontawesome.com/a076d05399.js"
+          crossorigin="anonymous"
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Bootstrap and JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+
+        <script src="./js/script.js"></script>
+        <script src="./js/swiper.js"></script>  </body>
+    </html>

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Font Awesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Responsive Header</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style1.css" />
+    <link rel="stylesheet" href="./css/style2.css" />
+
+
+    <!-- <link rel="stylesheet" href="./css/Responsive.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
+
+
+    <!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+<!-- jQuery (required by Owl Carousel) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+        </head>
+
+   <body>
+
+
+    <div class="top-bar">
+      <div class="left-section">
+        <div class="since" style="color: #cc0000;">Since: 2007</div>
+        <div class="double-vertical-line">
+          <div class="vertical-line"></div>
+          
+        </div>
+      </div>
+    
+      <div class="right-section">
+        <div class="contact-info">
+          <span><i class="fa fa-space"></i> +91 9818333866</span>
+          <div class="double-vertical-line">
+            <div class="vertical-line"></div>
+          </div>
+          <span><i class="fa fa-space"></i> sunriseipr@gmail.com</span>
+        </div>
+        <div class="icon-group">
+          <i class="fa fa-space" style="padding: 2px;"></i>
+          <i class="fa fa-space" style="padding: 3px;"></i>
+          <i class="fa fa-space" style="padding: 4px;"></i>
+        </div>
+      </div>
+    </div>
+    
+
+
+
+        <!-- Header -->
+        <header class="header">
+          <img src="./image/logo.jpeg" alt="Sunrise Logo" class="logo" />
+        
+          <!-- Hamburger Icon for Mobile -->
+          <div id="hamburger-icon" class="hamburger-icon" onclick="toggleMenu()">☰</div>
+        
+          <!-- Close Icon for Mobile -->
+          <div id="close-icon" class="close-icon" onclick="toggleMenu()" style="display: none;">✕</div>
+        
+          <!-- Navigation Menu -->
+          <nav>
+              <ul id="nav-links" class="nav-links">
+                  <li><a href="index.html" class="">Home</a></li>
+                  <li><a href="About.html">About</a></li>
+                  <li class="dropdown">
+                      <a href="blog.html" class="dropbtn">Practice Areas</a>
+                      <div class="dropdown-content">
+                          <a href="trademark-registration.html">Trademark Registration</a>
+                          <a href="Design.html">Design</a>
+                          <a href="Copyright.html">Copyright</a>
+                          <a href="iso.html">ISO</a>
+                          <a href="Fssal.html">FSSAI (Food Licence)</a>
+                          <a href="Msme.html">Pvt. Ltd, MSME/Udyam Reg.</a>
+                      </div>
+                  </li>
+                  <li><a href="blog.html">IP News & Events</a></li>
+                  <li><a href="Careers.html">Careers</a></li>
+                  <li><a href="ContactUs.html">Contact Us</a></li>
+              </ul>
+          </nav>
+        
+
+
+
+          
+          <!-- Enquiry Button -->
+          <div class="button-container">
+              <button class="enquiry-button">Enquiry Now</button>
+          </div>
+        </header>
+        
+
+<!-- Enquiry Modal -->
+<div id="enquiryModal" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 class="form-heading">Enquiry Now</h2>
+
+      <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Enter name">
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Enter email">
+
+          <label for="mobile">Mobile No. :</label>
+          <input type="text" id="mobile" placeholder="Enter mobile no.">
+
+          <label for="service">Choose Service :</label>
+          <select id="service">
+              <option>Select Your Service</option>
+              <option>Service 1</option>
+              <option>Service 2</option>
+          </select>
+
+          <label for="message">Message :</label>
+          <textarea id="message" placeholder="Write Your Message ..."></textarea>
+
+         <button type="submit">Submit</button>
+      </form>
+  </div>
+</div>
+
+ <!-- main-header end -->
+
+ <!-- Page Title -->
+
+ <section class="page-title" style="background-image: url(./image/download-bg.jpg);">
+
+  <div class="auto-container">
+
+      <div class="content-box">
+
+          <center><div class="title centred">
+
+              <h1>ISO
+
+          </div></center>
+
+          <ul class="bread-crumb clearfix">
+
+              <li><a href="index.html">Home</a></li>
+
+              <li>iso</li>
+
+          </ul>
+
+      </div>
+
+  </div>
+
+</section>
+
+
+ <!-- Page Title -->
+
+
+    <!-- about-style-three -->
+
+    <section class="about-style-three bg-color-1">
+
+        <div class="auto-container">
+
+            <div class="row clearfix .align-items-center">                   
+
+                <div class="col-lg-7 col-md-7 col-sm-12 content-column">
+
+                    <div class="content_block_5">
+                    
+
+                        <div class="content-box">
+
+                            <div class="sec-title">
+                                
+                                <h3>What is the ISO (International Organization for Standardization)?</h3>
+
+                                <div class="title-shape"></div>
+
+                            </div>
+
+                         
+
+                            <div class="text">
+                                <img src="./image/cart/ISO.jpg" alt="">
+                            </div>												
+
+                        </div>                                    
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-5 col-md-5 col-sm-12 content-column">
+
+                    <div class="content_block_5">
+                        <div class="content-box form-box">
+
+                            <div class="sec-title">                                
+
+                                <h3>Enquiry Now</h3>                                   
+
+                            </div>
+
+                         
+
+                            <div class="text">
+                              <form method="post" action="">
+                                    <div class="form-group .appoint-form">
+                                    <label for="name" style="color:#fff;">Name:</label>
+                                        <input type="name" class="form-control" id="name" placeholder="Enter name" name="name" required>
+                                    </div>
+
+                                    <div class="form-group .appoint-form">
+                                    <label for="email" style="color:#fff;">Email:</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                    </div>
+
+                                    <div class="form-group .appoint-form">
+                                    <label for="mobile" style="color:#fff;">Mobile No. :</label>
+                                        <input type="text" class="form-control" id="mobile" placeholder="Enter mobile no." name="number" required>
+                                    </div>
+
+                                    <!-- <div class="form-group .appoint-form">
+                                    <label for="mobile" style="color:#fff;">Choose Service :</label>
+                                        <select name="service">
+                                            <option value="ISO">ISO</option>
+                                        </select>
+                                    </div> -->
+
+                                    
+                                    <div class="form-group .appoint-form">
+                                    <label for="mobile" style="color:#fff; margin-top: 1rem;">Message :</label>                    
+                                        <textarea name="msg" placeholder="Write Your Message ..." class="message-textarea"></textarea>
+                                    </div>       
+                                    
+                                    <div class="appoint-submit" style="text-align: center;">    
+                                        <button type="submit" class="appointment-submit" name="submit">Submit</button>
+                                    </div>
+
+                                </form>                                    
+                            </div>												
+
+                        </div>                                    
+
+                    </div>
+
+                </div>                   
+
+            </div>
+            
+            
+             <div class="row clearfix .align-items-center" style="margin-top: 40px;">                   
+
+                <div class="col-lg-12 col-md-12 col-sm-12 content-column">
+
+                    <div class="content_block_5">
+                    
+
+                        <div class="content-box">
+
+                            <div class="sec-title">
+                                <h3>ISO mean in India?</h3>
+                                <div class="title-shape"></div>
+                            </div>
+                            
+                            <div class="text">
+                                <p>ISO refers to International Organization for Standardisation. It is an independent organisation that provides standards in terms of quality, safety, and efficiency of products and services provided by businesses.</p>
+                            </div>
+                            
+                            
+                            <div class="sec-title">
+                                <h3> standard means?</h3>
+                                <div class="title-shape"></div>
+                            </div>
+                            
+                            <div class="text">
+                                <p>An ISO standard is essentially an internationally recognised way of doing something. It means that everyone follows the same set of guidelines no matter where they are based, resulting in a safer, more consistent end result. This benefits both the organisation and the customer or end user.</p>
+                            </div>
+                            
+                            
+
+                        
+                            <div class="sec-title">
+                                <h3> the Different Types of ISO Standards</h3>
+                                <div class="title-shape"></div>
+                            </div>
+                            
+                            <div class="text">
+                                <p>Standardization within a business is common practice. Standards are a highly distilled best practice, established by experts who know the needs of the field they represent. The standards themselves can be about creating a product, managing a process, or delivering a service.</p>
+                                <p>The development of industry standards has long been, well, a standard practice; so that individual organizations can align themselves to external norms, while customers and suppliers can also understand the organization’s processes.</p>
+                                <p>Businesses use ISO certification to provide potential customers with proof of compliance and win their trust. Before that, however, you’ll have to purchase and achieve the certification. ISO certification costs differ based on many factors, such as your organization size, industry sector, annual revenue, number of employees, and so on.</p>
+                            </div>
+                            
+                            
+                            <div class="sec-title">
+                                <h3>The Full Name of ISO?</h3>
+                                <div class="title-shape"></div>
+                            </div>
+                            
+                            <div class="text">
+                                <p>ISO stands for International Organization of Standardization. The ISO is an international body responsible for creating, setting, and promoting standards. To date it has published more than 22,600 standards and related documents that apply to all kinds of industries, such as manufacturing, healthcare, and accounting.</p>
+                                <p>ISO standards are a collection of best practices that promote product compatibility, sharing of solutions and know-how, and identification of safety issues. The standards present an approach that has been agreed on by international experts.</p>
+                                <p>Businesses use <a href="#">ISO certification</a> to provide potential customers with <a href="#">proof of compliance</a> and win their trust. Before that, however, you’ll have to purchase and achieve the certification. <a href="#">ISO certification costs</a> differ based on many factors, such as your organization size, industry sector, annual revenue, number of employees, and so on.</p>
+                            </div>
+                            
+                            
+                            
+                             <div class="sec-title">
+                                <h3> The Relevant ISO Standards for GRC?</h3>
+                                <div class="title-shape"></div>
+                            </div>
+                            
+                            <div class="text">
+                                <p>Various ISO standards and other industry-standard practices address governance risk and compliance (GRC) management systems for the information technology domain.</p>
+                            </div>
+                            
+                            
+                            <div class="sec-title">
+                                <h6><i class="flaticon-sunny-day-or-sun-weather"></i><span><strong>A few ISO standards that can offer guidance and advice for GRC include:</strong></span></h6>
+                            </div>
+                            
+                            <div class="text bullets-points">                                  
+                                <p style="color: #ff3334; margin-bottom:0;"><strong> ISO 20000 (Service Management)</strong></p>
+                                <p style="color: #ff3334; margin-bottom:0;"><strong> ISO 22301 (Business Continuity)</strong></p>
+                                <p style="color: #ff3334; margin-bottom:0;"><strong> ISO 27001 (Information Security)</strong></p>
+                                <p style="color: #ff3334; margin-bottom:0;"><strong> ISO 27005 (Information Risk Management)</strong></p>
+                                <p style="color: #ff3334; margin-bottom:0;"><strong> ISO 31000 (Risk Management)</strong></p>
+                                <p style="color: #ff3334;"><strong> ISO 38500 (Corporate Governance of Information Technology) </strong></p>
+                            </div>
+                            
+                            <div class="text">
+                                <p>Companies can use a hybrid management system, where they combine the concepts of multiple standards and frameworks (and implement other best practices as well), to create an effective solution that meets the requirements of organizational stakeholders. What’s more, the approach can also minimize the duplication of efforts.</p>
+                                <p>You also need to note any cross-references to patent applications related to your product, unless you already have them in your application. You must also note whether you relied on any federal research or development to create your invention.</p>
+                            </div>
+                        
+                        
+                        </div>                                    
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- about-style-three end -->
+
+
+
+   <!-- Years of experiance Section Start -->
+   <section class="experience-section section-padding">
+    <div class="container">
+        <div class="section-title text-center">
+            <h2>15 Years Of Experience As An Attorney Firm</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="content text-center">
+                    <p>The firm: SUNRISE TRADE MARK CO. is a full-service intellectual property and technology law firm focused<br> on rendering business-friendly legal advice.</p>
+                </div>
+                <div class="section-subtitle text-center">
+                    <h3>2007</h3>
+                    <h6>
+                        <i class="fas fa-sun"></i>
+                        <span> COMPANY ESTABLISHED </span>
+                        <i class="fas fa-sun"></i>
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Years of experiance Section End   -->
+
+
+
+
+
+
+
+        <!-- Footer Section -->
+        <div class="footer">
+          <!-- About Us Section -->
+          <div>
+            <h3>About Us</h3>
+            <p>
+              ‘A diverse and dynamic group‘, SUNRISE TRADE MARK CO. is a top flight
+              practice that protects and enforces IP assets from filing and
+              prosecuting patent and trade mark applications, through to IP
+              litigation, often concerning landmark cases.
+            </p>
+          </div>
+
+          <!-- Quick Links Section -->
+          <div>
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="trademark-registration.html">Trademark Registration</a></li>
+              <li><a href="Copyright.html">Copyright</a></li>
+              <li><a href="Design.html">Design</a></li>
+              <li><a href="iso.html">ISO</a></li>
+              <li><a href="Fssal.html">FSSAI (Food Licence)</a></li>
+              <li><a href="Msme.html">Pvt. Ltd, MSME/Udyam Reg.</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Us Section -->
+          <div>
+            <h3>Contact Us</h3>
+            <p>
+              <strong>Location</strong><br />Block B-4, Sunrise House, Gali No.-9,
+              Harsh Vihar, New Delhi-93
+            </p>
+            <p><strong>Phone</strong><br />+91 9818383866</p>
+            <p><strong>Email</strong><br />sunriseipr@gmail.com</p>
+          </div>
+
+          <!-- Enquiry Box Section -->
+          <div class="enquiry-box">
+            <h4>Enquiry Your Query</h4>
+            <p>Here you can enquire about issues and make requests.</p>
+            <button>ENQUIRY NOW</button>
+          </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="footer-copyright">
+          &copy; 2022 By <a href="#">Sunrise Trademark Co.</a> All Rights Reserved.
+        </div>
+
+        <!-- Font Awesome for icons (optional, include if you want icons in contact info) -->
+        <script
+          src="https://kit.fontawesome.com/a076d05399.js"
+          crossorigin="anonymous"
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Bootstrap and JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+
+        <script src="./js/script.js"></script>
+        <script src="./js/swiper.js"></script>  </body>
+    </html>

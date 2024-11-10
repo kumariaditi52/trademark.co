@@ -1,0 +1,134 @@
+
+
+/* Responsive Breakpoints */
+@media (max-width: var(--breakpoint-sm)) {
+    body {
+        font-size: 0.9rem; /* Adjust font size on smaller screens */
+    }
+}
+
+@media (min-width: var(--breakpoint-md)) {
+    body {
+        font-size: 1rem; /* Set base font size for medium screens and larger */
+    }
+}
+
+
+/* Responsive Design for Screens Smaller than 768px */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        margin-top: 120px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Center the contact-info in the top bar
+    .top-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .top-bar .contact-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .top-bar .contact-info span,
+    .top-bar .contact-info i {
+        font-size: 12px;
+    }.header .logo {
+        width: 120px;
+        margin-left: 130px;
+    }
+} */
+}
+/* Responsive Styles */
+@media (max-width: 767px) {
+    .nav-links {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+}
+
+
+
+  /* /////////// */
+
+  /* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .content h1 {
+        font-size: 2.5rem; /* Slightly smaller font size for better fit */
+    }
+
+    .nav a {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+        margin: 0 10px;  /* Reduced margin */
+    }
+
+    .image {
+        width: 90vh; /* Allow image to adjust height based on screen size */
+    }
+}
+
+/* Responsive Design for Small Mobile Screens */
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 2rem; /* Even smaller font size for very small screens */
+    }
+
+    .nav {
+        bottom: 10px; /* Reduce space for navigation on very small screens */
+        padding: 8px 16px;
+        margin-left: 30px;
+
+    }
+
+    .nav a {
+        font-size: 0.9rem; /* Even smaller font size */
+        margin: 0 8px;  /* Reduce margin */
+    }
+}
+
+
+/* Media Query for smaller screens (mobile devices) */
+@media (max-width: 768px) {
+    .main-section {
+      flex-direction: column;  /* Stack content vertically */
+    }
+  
+    .text-container {
+      width: 100%;  /* Full width for text */
+      padding-right: 0;  /* Remove padding */
+      margin-bottom: 20px;  /* Add space between text and image */
+    }
+  
+    .image-container {
+      width: 100%;  /* Full width for the image */
+      margin-top: 20px;  /* Add space between text and image */
+    }
+  
+    .text-container h1 {
+      font-size: 24px;  /* Smaller font size for mobile */
+    }
+  
+    .text-box {
+      font-size: 14px;  /* Adjust text size for better readability */
+    }
+  }
+  
+
+
+  

@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Font Awesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Responsive Header</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style1.css" />
+    <link rel="stylesheet" href="./css/style2.css" />
+
+
+    <!-- <link rel="stylesheet" href="./css/Responsive.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
+
+
+    <!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+<!-- jQuery (required by Owl Carousel) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+        </head>
+
+   <body>
+
+
+    <div class="top-bar">
+      <div class="left-section">
+        <div class="since" style="color: #cc0000;">Since: 2007</div>
+        <div class="double-vertical-line">
+          <div class="vertical-line"></div>
+          
+        </div>
+      </div>
+    
+      <div class="right-section">
+        <div class="contact-info">
+          <span><i class="fa fa-space"></i> +91 9818333866</span>
+          <div class="double-vertical-line">
+            <div class="vertical-line"></div>
+          </div>
+          <span><i class="fa fa-space"></i> sunriseipr@gmail.com</span>
+        </div>
+        <div class="icon-group">
+          <i class="fa fa-space" style="padding: 2px;"></i>
+          <i class="fa fa-space" style="padding: 3px;"></i>
+          <i class="fa fa-space" style="padding: 4px;"></i>
+        </div>
+      </div>
+    </div>
+    
+
+
+
+        <!-- Header -->
+        <header class="header">
+          <img src="./image/logo.jpeg" alt="Sunrise Logo" class="logo" />
+        
+          <!-- Hamburger Icon for Mobile -->
+          <div id="hamburger-icon" class="hamburger-icon" onclick="toggleMenu()">☰</div>
+        
+          <!-- Close Icon for Mobile -->
+          <div id="close-icon" class="close-icon" onclick="toggleMenu()" style="display: none;">✕</div>
+        
+          <!-- Navigation Menu -->
+          <nav>
+              <ul id="nav-links" class="nav-links">
+                  <li><a href="index.html" class="">Home</a></li>
+                  <li><a href="About.html">About</a></li>
+                  <li class="dropdown">
+                      <a href="blog.html" class="dropbtn">Practice Areas</a>
+                      <div class="dropdown-content">
+                          <a href="trademark-registration.html">Trademark Registration</a>
+                          <a href="Design.html">Design</a>
+                          <a href="cop">Copyright</a>
+                          <a href="#">ISO</a>
+                          <a href="#">FSSAI (Food Licence)</a>
+                          <a href="#">Pvt. Ltd, MSME/Udyam Reg.</a>
+                      </div>
+                  </li>
+                  <li><a href="blog.html">IP News & Events</a></li>
+                  <li><a href="Careers.html">Careers</a></li>
+                  <li><a href="ContactUs.html">Contact Us</a></li>
+              </ul>
+          </nav>
+        
+
+
+
+          
+          <!-- Enquiry Button -->
+          <div class="button-container">
+              <button class="enquiry-button">Enquiry Now</button>
+          </div>
+        </header>
+        
+
+<!-- Enquiry Modal -->
+<div id="enquiryModal" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 class="form-heading">Enquiry Now</h2>
+
+      <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Enter name">
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Enter email">
+
+          <label for="mobile">Mobile No. :</label>
+          <input type="text" id="mobile" placeholder="Enter mobile no.">
+
+          <label for="service">Choose Service :</label>
+          <select id="service">
+              <option>Select Your Service</option>
+              <option>Service 1</option>
+              <option>Service 2</option>
+          </select>
+
+          <label for="message">Message :</label>
+          <textarea id="message" placeholder="Write Your Message ..."></textarea>
+
+         <button type="submit">Submit</button>
+      </form>
+  </div>
+</div>
+
+ <!-- main-header end -->
+
+ <!-- Page Title -->
+
+ <section class="page-title" style="background-image: url(./image/download-bg.jpg);">
+
+  <div class="auto-container">
+
+      <div class="content-box">
+
+          <center><div class="title centred">
+
+              <h1>TRADEMARK REGISTRATION
+            </h1>
+
+          </div></center>
+
+          <ul class="bread-crumb clearfix">
+
+              <li><a href="index.html">Home</a></li>
+
+              <li>Trademark Registration</li>
+
+          </ul>
+
+      </div>
+
+  </div>
+
+</section>
+
+
+ <!-- Page Title -->
+
+
+ <!-- about-style-three -->
+
+ <section class="about-style-three bg-color-1">
+
+  <div class="auto-container">
+
+      <div class="row clearfix .align-items-center">                   
+
+          <div class="col-lg-7 col-md-7 col-sm-12 content-column">
+
+              <div class="content_block_5">
+              
+
+                  <div class="content-box">
+
+                      <div class="sec-title">
+                          
+                          <h3>Trademark Registration</h3>
+
+                          <div class="title-shape"></div>
+
+                      </div>
+
+                   
+
+          <div class="text">                                  
+        <p>Registration of Trademark shall provide the exclusive right to the use of the trade mark in relation to the goods or services in respect of which the trade mark is registered and to obtain relief in respect of infringement of the trade mark.</p>
+        
+        <p>Updated on 08-03-2020 12:00:00</p>
+        <img src="./image/cart/Trademark-Registration.jpg" alt="">
+                          
+                      </div>												
+
+                  </div>                                    
+
+              </div>
+
+          </div>
+
+          <div class="col-lg-5 col-md-5 col-sm-12 content-column">
+
+              <div class="content_block_5">
+                  <div class="content-box form-box">
+
+                      <div class="sec-title">                                
+
+                          <h3>Enquiry Now</h3>                                   
+
+                      </div>
+
+                   
+
+          <div class="text">
+  <form method="post" action="mailer.php">
+                              <div class="form-group .appoint-form">
+                              <label for="name" style="color:#fff;">Name:</label>
+                                  <input type="name" class="form-control" id="name" placeholder="Enter name" name="name" required>
+                              </div>
+
+                              <div class="form-group .appoint-form">
+                              <label for="email" style="color:#fff;">Email:</label>
+                                  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                              </div>
+
+                              <div class="form-group .appoint-form">
+                              <label for="mobile" style="color:#fff;">Mobile No. :</label>
+                                  <input type="text" class="form-control" id="mobile" placeholder="Enter mobile no." name="number" required>
+                              </div>
+
+                              <!-- <div class="form-group .appoint-form">
+                              <label for="mobile" style="color:#fff;">Choose Service :</label>
+                                  <select name="service">
+                                      <option value="Trademark Reg.">Trademark Reg.</option>
+                                  </select>
+                              </div> -->
+
+                              
+                              <div class="form-group .appoint-form">
+                              <label for="mobile" style="color:#fff; margin-top: 1rem;">Message :</label>                    
+                                  <textarea name="msg" placeholder="Write Your Message ..." class="message-textarea"></textarea>
+                              </div>       
+                              
+                              <div class="appoint-submit" style="text-align: center;">    
+                                  <button type="submit" class="appointment-submit" name="submit">Submit</button>
+                              </div>
+
+                          </form>                                    
+                      </div>												
+
+                  </div>                                    
+
+              </div>
+
+          </div>                   
+
+      </div>
+      
+      
+      
+      
+      
+      
+      <div class="row clearfix .align-items-center">                   
+
+          <div class="col-lg-12 col-md-12 col-sm-12 content-column">
+
+              <div class="content_block_5">
+              
+
+                  <div class="content-box">
+
+                      <div class="sec-title">
+                          
+                          <h3>What is a Trademark?</h3>
+
+                          <div class="title-shape"></div>
+
+                      </div>
+
+                   
+
+          <div class="text">                                  
+        <p>A Trademark is typically a name, word, phrase, logo, symbol, image or a combination of these to distinguish a company’s products and services from those of others.  It is also used as a marketing tool to create awareness and recognition of products or services among customers.</p>
+        
+        <p>A trademark is the intellectual property of its holder; and ownership of a trademark flows from the business usage of the trademark. Trademark Registration provides ultimate protection for Business Name, Brand Name, Taglines, Captions, Logo, Symbol or Emblem or a combination of these as Trademark.</p>
+        
+                          <p>There are Different Types of Trademarks such as Word Mark, Device Mark, Colour Mark, Shapes of Goods, Sound Mark and Three Dimension Mark.</p>
+                      </div>												
+
+                  </div>                                    
+
+              </div>
+
+          </div>
+
+                            
+
+      </div>
+      
+      <div class="row clearfix .align-items-center">                   
+
+          <div class="col-lg-12 col-md-12 col-sm-12 content-column">
+
+              <div class="content_block_5">
+              
+
+                  <div class="content-box">
+
+                      <div class="sec-title">
+                          
+                          <h3>Different Types Trademark</h3>
+
+                          <div class="title-shape"></div>
+
+                      </div>
+
+                   
+
+          <div class="text">                                  
+        <p>A trademark is an identifiable device or matter or a thing that is made for depicting a name, brand or label represented by a drawing, painting, or other art form for the purpose of identification differentiating a product or service.</p>
+        
+        <p>As per Trademark Act, 1999, a "mark" includes a device, brand, heading, label, ticket, name, signature, word, letter, numeral, shape of goods, packaging or combination of colours or any combination thereof. </p>
+        
+                          
+                      </div>												
+
+                  </div>                                    
+
+              </div>
+
+          </div>
+
+                            
+
+      </div>
+      
+      </div>
+      
+      
+      
+      
+      <section class="schedules-section sec-pad .bg-color-1" style="background: #fff;">
+
+          <div class="auto-container">
+
+              <div class="title-inner">
+
+                  <div class="row clearfix">
+
+                      <div class="col-lg-12 col-md-12 col-sm-12 title-column">
+
+                          <div class="sec-title">
+
+                              
+                              <h2>Different Types of Trademark in India </h2>
+                              <h6><i class="flaticon-sunny-day-or-sun-weather"></i><span>Trademarks can be divided in to following categories:</span></h6>
+
+                              <div class="title-shape"></div>
+
+                          </div>
+
+                      </div>
+
+                     
+
+                  </div>
+
+      </div>
+
+              <div class="schedule-tab">
+
+                  <div class="tab-btn-box">
+
+                      <ul class="tab-btns schedule-tab-btns clearfix">
+
+                          <li class="p-tab-btn active-btn" data-tab="#tab-1">Word Mark </li>
+
+                          <li class="p-tab-btn" data-tab="#tab-2">Device Mark </li>
+
+                          <li class="p-tab-btn" data-tab="#tab-3">Colour Mark</li>
+                          
+                          <li class="p-tab-btn" data-tab="#tab-4">Shapes of Goods</li>
+                          
+                          <li class="p-tab-btn" data-tab="#tab-5">Sound Mark</li>
+                          
+                          <li class="p-tab-btn dimension-mark" data-tab="#tab-6">Three Dimension Mark</li>
+
+                      </ul>
+
+                  </div>
+
+                  <div class="inner-content">
+
+                      <div class="row clearfix">
+
+                          
+
+                          <div class="col-lg-12 col-md-12 col-sm-12 inner-column">
+
+                              <div class="p-tabs-content">
+
+                                  <div class="p-tab active-tab" id="tab-1">
+                                      
+                                      <div class="sec-title">
+                                          <h3>Word Mark - Word or Letters, Slogans or Taglines</h3>
+                                      </div>
+
+                                      <div class="text">
+                                                                            
+                        <p>Word Mark means a name written as Text or a word or Letter or group of letters is the most common forms word of mark.</p></br>
+                        
+                        <p>Word mark includes one or more words, letters, numerals or anything written in standard character. A word mark could be a text of Name, Brand, Slogan or tagline without design. For eg. Apple, Google, Microsoft, Tata, KFC, IBM, NDTV etc.</p></br>
+                        
+                        <p>Also, Slogans or Taglines can also will come under category of Word Mark. Examples of  slogans are McDonalds - i'm loving it, Nike’s  ‘just do it’ etc </p>
+                      
+                                      </div>												
+
+
+                                  </div>
+
+                                  <div class="p-tab" id="tab-2">
+
+                                       <div class="sec-title">
+                                          <h3>Device Mark - Logo, Combination of Words and a Logo, Pictures or Drawings</h3>
+                                      </div>
+
+                                      <div class="text">
+                                                                            
+                        <p>Logos or a specific mode or design of a name is called Device mark. A device mark includes any label, sticker, monogram, logo or any geometrical figure other than word mark.</p></br>
+                        
+                        <p>Logos are most common form of mark. A logo can be a design which is used as a mark for marketing the goods or services. Logo need to be elaborate or explanatory. However, it must be distinctive to identify the goods and services sold under the mark.</p></br>
+                        
+                        <p>In case of trademarks submitted in specific combination of colours other than black and white, it shall be presumed that the distinctiveness of the mark is claimed in that combination of colours and application will be considered accordingly. </p>
+                      
+                                      </div>												
+
+
+                                  </div>
+
+                                  <div class="p-tab" id="tab-3">
+
+                                       <div class="sec-title">
+                                          <h3>Colour Mark</h3>
+                                      </div>
+
+                                      <div class="text">
+                                                                            
+                        <p>Colour Mark means a trademark consisting of a single colour, or a combination of colours and the combination of colour is claimed to be registered as a trade mark.</p></br>
+                        
+                        <p>Colour Mark can be claimed when the distinctiveness is claimed in the combination of colours with or without device. </p></br>
+                        
+                        <p>A colour mark can be registered only if the colour is a new invention and the consumers directly link the colour with the brand. Unless the colour as such identifies the product, it will be difficult to prove distinctiveness with just a single colour.</p>
+                      
+                                      </div>
+                                      
+                                  </div>
+                                  
+                                   <div class="p-tab" id="tab-4">
+
+                                       <div class="sec-title">
+                                          <h3>Shapes of Goods</h3>
+                                      </div>
+
+                                      <div class="text">
+                                                                            
+                        <p>Shape Mark are capable of distinguishing the goods with its shape or packaging.</p></br>
+                        
+                        <p>For example – Coco Cola Bottle, Apple iPhone, Toblerone Chocolate etc. </p></br>
+                        
+                        
+                      
+                                      </div>
+                                      
+                                  </div>
+                                  
+                                   <div class="p-tab" id="tab-5">
+
+                                      <div class="sec-title">
+                                          <h3>Sound Mark</h3>
+                                      </div>
+
+                                      <div class="text">
+                                                                            
+                        <p>Sound Mark refers to specially composed sounds or musical notes and sound that is usedto identify a particular goods or services.</p></br>
+                        
+                        <p>Examples – 20th Century Fox Fanfare, AT&T;'s sonic, Duracell's 3-note "coppertop" logo, McDonald's Corporation's five-note "I'm lovin' it" jingle, Netflix sound logo, Samsung ringtone, Sony "ding" sound logo, Xbox 360 startup sound/swoosh etc.</p></br>
+                        
+                        
+                      
+                                      </div>
+                                      
+                                  </div>
+                                  
+                                   <div class="p-tab" id="tab-6">
+
+                                       <div class="sec-title">
+                                          <h3>Three Dimension Mark</h3>
+                                      </div>
+
+                                      <div class="text">
+                        <p>A Three dimensional trademark includes shape or packaging of goods.</p></br>
+                                      </div>
+                                      
+                                  </div>
+
+                              </div>
+
+                          </div>
+
+                      </div>
+
+                  </div>
+
+      </div>
+
+          </div>
+
+      </section>
+      
+  <div class="auto-container">    
+      
+      <div class="row clearfix .align-items-center">                   
+
+          <div class="col-lg-12 col-md-12 col-sm-12 content-column">
+
+              <div class="content_block_5">
+              
+
+                  <div class="content-box">
+
+                      <div class="sec-title" style="margin-top: 40px;">
+                          
+                          <h3>Why Trademark to be registered?</h3>
+
+                          <div class="title-shape"></div>
+
+                      </div>
+
+                   
+
+          <div class="text">                                  
+        <p>A company/individual should register the trademark in order to possess the complete ownership of the mark and to protect the same from misuse by another person/business entity. If the trademark is not registered, the owner of the mark shall not be entitled to initiate any legal proceedings against anyone to prevent or to recover damages for the infringement of the trade mark.</p>
+      
+                      </div>												
+
+                  </div>                                    
+
+              </div>
+
+          </div>
+
+      </div>
+      
+      
+      
+      <div class="row clearfix .align-items-center">                   
+
+          <div class="col-lg-12 col-md-12 col-sm-12 content-column">
+
+              <div class="content_block_5">
+              
+
+                  <div class="content-box">
+
+                      <div class="sec-title">
+                          
+                          <h3>Trademark Classification - 45 Classes</h3>
+
+                          <div class="title-shape"></div>
+
+                      </div>
+
+          <div class="text">                                  
+        <p>Under Trademark Registration process, goods and services are classified into 45 Classes of Trademark. It is very important to identify the class in which the goods/services fit into and file an application under the relevant class. If a trademark is used for goods and services under different classes, separate applications are required to be filed under each class to get protection of trademark for the respective goods and services.</p>
+                      </div>
+                      
+                      
+                          <div class="sec-title text-center">
+                              <h3>THE FOURTH SCHEDULE TO TRADE MARKS RULES, 2002</h3>
+                              <h6><span>Classification of goods and services – Name of the classes</span></h6>
+                          </div>
+                          
+                          
+                      <div class="text">                                  
+        <p>(Parts of an article or apparatus are, in general, classified with the actual article or apparatus, except where such parts constitute articles included in other classes).</p>
+                      </div>
+                      
+                      
+                      <div class="text trademarks-rules">                                  
+        <p><strong>Class 1. </strong> Chemical used in industry, science, photography, agriculture, horticulture and forestry; unprocessed artificial resins, unprocessed plastics; manures; fire extinguishing compositions; tempering and soldering preparations; chemical substances for preserving foodstuffs; tanning substances; adhesive used in industry</p>
+        
+        <p><strong>Class 2. </strong> Paints, varnishes, lacquers; preservatives against rust and against deterioration of wood; colorants; mordents; raw natural resins; metals in foil and powder form for painters; decorators; printers and artists</p>
+        
+        <p><strong>Class 3. </strong> Bleaching preparations and other substances for laundry use; cleaning; polishing; scouring and abrasive preparations; soaps; perfumery, essential oils, cosmetics, hair lotions, dentifrices</p>
+        
+        <p><strong>Class 4. </strong> Industrial oils and greases; lubricants; dust absorbing, wetting and binding compositions; fuels(including motor spirit) and illuminants; candles, wicks</p>
+        
+        <p><strong>Class 5. </strong> Pharmaceutical, veterinary and sanitary preparations; dietetic substances adapted for medical use, food for babies; plasters, materials for dressings; materials for stopping teeth, dental wax; disinfectants; preparation for destroying vermin; fungicides, herbicides</p>
+        
+        <p><strong>Class 6. </strong> Common metals and their alloys; metal building materials;
+                              transportable buildings of metal; materials of metal for railway tracks; non-electric cables and wires of common metal; ironmongery, small items of metal hardware; pipes and tubes of metal; safes; goods of common metal not included in other classes; ores</p>
+        
+        <p><strong>Class 7. </strong> Machines and machine tools; motors and engines (except for land vehicles); machine coupling and transmission components (except for land vehicles); agricultural implements other than hand-operated; incubators for eggs</p>
+        
+        <p><strong>Class 8. </strong> Hand tools and implements (hand-operated); cutlery; side arms; razors</p>
+        
+        <p><strong>Class 9. </strong> Scientific, nautical, surveying, electric, photographic, cinematographic, optical, weighing, measuring, signalling, checking (supervision), life saving and teaching apparatus and instruments; apparatus for recording, transmission or reproduction of sound or images; magnetic data carriers, recording discs; automatic vending machines and mechanisms for coin-operated apparatus; cash registers, calculating machines, data processing equipment and computers; fire extinguishing apparatus</p>
+        
+        <p><strong>Class 10. </strong> Surgical, medical, dental and veterinary apparatus and instruments, artificial limbs, eyes and teeth; orthopaedic articles; suture materials</p>
+        
+        <p><strong>Class 11. </strong> Apparatus for lighting, heating, steam generating, cooking, refrigerating, drying ventilating, water supply and sanitary purposes</p>
+        
+        <p><strong>Class 12. </strong> Vehicles; apparatus for locomotion by land, air or water</p>
+        
+        <p><strong>Class 13. </strong> Firearms; ammunition and projectiles; explosives; fire works</p>
+        
+        <p><strong>Class 14. </strong> Precious metals and their alloys and goods in precious metals or coated therewith, not included in other classes; jewellery, precious stones; horological and other chronometric instruments</p>
+        
+        <p><strong>Class 15. </strong> Musical instruments</p>
+        
+        <p><strong>Class 16. </strong> Paper, cardboard and goods made from these materials, not included in other classes; printed matter; bookbinding material; photographs; stationery; adhesives for stationery or household purposes; artists' materials; paint brushes; typewriters and office requisites (except furniture); instructional and teaching material (except apparatus); plastic materials for packaging (not included in other classes); playing cards; printers' type; printing blocks</p>
+        
+        <p><strong>Class 17. </strong> Rubber, gutta percha, gum, asbestos, mica and goods made from these materials and not included in other classes; plastics in extruded form for use in manufacture; packing, stopping and insulating materials; flexible pipes, not of metal</p>
+        
+        <p><strong>Class 18. </strong> Leather and imitations of leather, and goods made of these materials and not included in other classes; animal skins, hides, trunks and travelling bags; umbrellas, parasols and walking sticks; whips, harness and saddlery</p>
+        
+        <p><strong>Class 19. </strong> Building materials, (non-metallic), non-metallic rigid pipes for building; asphalt, pitch and bitumen; non-metallic transportable buildings; monuments, not of metal.</p>
+        
+        <p><strong>Class 20. </strong> Furniture, mirrors, picture frames; goods(not included in other classes) of wood, cork, reed, cane, wicker, horn, bone, ivory, whalebone, shell, amber, mother- of-pearl, meerschaum and substitutes for all these materials, or of plastics</p>
+        
+        <p><strong>Class 21. </strong> Household or kitchen utensils and containers(not of precious metal or coated therewith); combs and sponges; brushes(except paints brushes); brush making materials; articles for cleaning purposes; steelwool; unworked or semi-worked glass (except glass used in building); glassware, porcelain and earthenware not included in other classes</p>
+        
+        <p><strong>Class 22. </strong> Ropes, string, nets, tents, awnings, tarpaulins, sails, sacks and bags (not included in other classes) padding and stuffing materials(except of rubber or plastics); raw fibrous textile materials</p>
+        
+        <p><strong>Class 23. </strong> Yarns and threads, for textile use</p>
+        
+        <p><strong>Class 24. </strong> Textiles and textile goods, not included in other classes; bed and table covers.</p>
+        
+        <p><strong>Class 25. </strong> Clothing, footwear, headgear</p>
+        
+        <p><strong>Class 26. </strong> Lace and embroidery, ribbons and braid; buttons, hooks and eyes, pins and needles; artificial flowers</p>
+        
+        <p><strong>Class 27. </strong> Carpets, rugs, mats and matting, linoleum and other materials for covering existing floors; wall hangings(non-textile)</p>
+        
+        <p><strong>Class 28. </strong> Games and playthings, gymnastic and sporting articles not included in other classes; decorations for Christmas trees</p>
+        
+        <p><strong>Class 29. </strong> Meat, fish, poultry and game; meat extracts; preserved, dried and cooked fruits and vegetables; jellies, jams, fruit sauces; eggs, milk and milk products; edible oils and fats</p>
+        
+        <p><strong>Class 30. </strong> Coffee, tea, cocoa, sugar, rice, tapioca, sago, artificial coffee; flour and preparations made from cereals, bread, pastry and confectionery, ices; honey, treacle; yeast, baking powder; salt, mustard; vinegar, sauces, (condiments); spices; ice</p>
+        
+        <p><strong>Class 31. </strong> Agricultural, horticultural and forestry products and grains not included in other classes; live animals; fresh fruits and vegetables; seeds, natural plants and flowers; foodstuffs for animals, malt</p>
+        
+        <p><strong>Class 32. </strong> Beers, mineral and aerated waters, and other non-alcoholic drinks; fruit drinks and fruit juices; syrups and other preparations for making beverages</p>
+        
+        <p><strong>Class 33. </strong> Alcoholic beverages(except beers)</p>
+        
+        <p><strong>Class 34. </strong> Tobacco, smokers' articles, matches</p>
+        
+                <div class="sec-title text-center">
+                                      <h3>SERVICES</h3>
+                                  </div>
+                                  
+                                  
+                          <p><strong>Class 35. </strong> Advertising, business management, business administration, office functions.</p> 
+                          
+                          <p><strong>Class 36. </strong> Insurance, financial affairs; monetary affairs; real estate affairs.</p> 
+                          
+                          <p><strong>Class 37. </strong> Building construction; repair; installation services.</p> 
+                          
+                          <p><strong>Class 38. </strong> Telecommunications.</p>
+                          
+                          <p><strong>Class 39. </strong> Transport; packaging and storage of goods; travel arrangement.</p> 
+                          
+                          <p><strong>Class 40. </strong> Treatment of materials.</p> 
+                          
+                          <p><strong>Class 41. </strong> Education; providing of training; entertainment; sporting and cultural activities.</p>
+                          
+                          <p><strong>Class 42. </strong> Scientific and technological services and research and design relating thereto; industrial analysis and research services; design and development of computer hardware and software.</p>
+                          
+                          <p><strong>Class 43. </strong> Services for providing food and drink; temporary accommodation.</p>
+                          
+                          <p><strong>Class 44. </strong> Medical services, veterinary services, hygienic and beauty care for human beings or animals; agriculture, horticulture and forestry services.</p>
+                          
+                          <p><strong>Class 45. </strong> Legal services; security services for the protection of property and individuals; personal and social services rendered by others to meet the needs of individuals.</p>
+      
+                      </div> 
+
+                  </div>                                    
+
+              </div>
+
+          </div>
+
+      </div>
+      
+      
+      <div class="row clearfix .align-items-center">                   
+
+          <div class="col-lg-12 col-md-12 col-sm-12 content-column">
+
+              <div class="content_block_5">
+              
+
+                  <div class="content-box">
+
+                      <div class="sec-title">
+                          
+                          <h3>Trademark Class Finder</h3>
+
+                          <div class="title-shape"></div>
+
+                      </div>
+
+                   
+
+          <div class="text">                                  
+        <p>Our Trademark Class Finder Tool will help you to identify the class in which the Trademark for a particular product / service is to be registered and to check whether the proposed trademark / name is already registered by someone with the Trade Mark Registry.</p>
+      
+                      </div>												
+
+                  </div>                                    
+
+              </div>
+
+          </div>
+
+      </div>
+      
+      <div class="row clearfix .align-items-center">                   
+
+          <div class="col-lg-12 col-md-12 col-sm-12 content-column">
+
+              <div class="content_block_5">
+              
+
+                  <div class="content-box">
+
+                      <div class="sec-title">
+                          
+                          <h3>Trademark Registration Filing Fee</h3>
+
+                          <div class="title-shape"></div>
+
+                      </div>
+
+                   
+
+          <div class="text">                                  
+        <p><strong>Trade mark government Fee</strong> is payable separately for each application under each class.</p>
+        
+        <p>If the trademark is used for different products and services, separate applications under multiple classes has to be filed for protecting name under different categories of products and services</p>
+      
+                      </div>
+                  </div>                                   
+
+              </div>
+          </div>
+          
+            <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Category of Applicant</th>
+                      <th>Normal Fees</th>
+                      <th>Reduced Fees</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Individual Applicant </td>
+                      <td>4500.00</td>
+                      <td>NA</td>
+                    </tr>
+                    <tr>
+                      <td>Sole Proprietorship Company</td>
+                      <td>4500.00</td>
+                      <td>NA</td>
+                    </tr>
+                    <tr>
+                      <td>LLP</td>
+                      <td>9000.00</td>
+                      <td>NA</td>
+                    </tr>
+                    <tr>
+                      <td>Joint Application </td>
+                      <td>9000.00</td>
+                      <td>NA</td>
+                    </tr>
+                    <tr>
+                      <td>MSME Registration or Start-up India Registration</td>
+                      <td>4500.00</td>
+                      <td>NA</td>
+                    </tr>
+                  </tbody>
+              </table>
+          
+
+
+      </div>
+      
+      
+      
+       <div class="row clearfix .align-items-center">                   
+
+          <div class="col-lg-12 col-md-12 col-sm-12 content-column">
+
+              <div class="content_block_5">
+              
+
+                  <div class="content-box">
+
+                      <div class="sec-title text-center">
+                          <h3>Show Cause Hearing of Trademark</h3>
+                      </div>
+
+                   
+
+          <div class="text">                                  
+        <p>Trademark Registration being a judicial process, the Registrar may order for a personal hearing on Trademark application. This refers to ‘Show Cause Hearing’ or ‘TLA Hearing’ of Trademarks. The status of Trademark application will be changed to “Ready for show cause Hearing”.</p>
+      
+                      </div>												
+
+                  </div>                                    
+
+              </div>
+
+          </div>
+
+      </div>
+      
+      
+      <div class="row clearfix .align-items-center">                   
+
+          <div class="col-lg-12 col-md-12 col-sm-12 content-column">
+
+              <div class="content_block_5">
+              
+
+                  <div class="content-box">
+
+                      <div class="sec-title">
+                          
+                          <h3>Trademark Showcause Hearing or TLA Hearing</h3>
+
+                          <div class="title-shape"></div>
+
+                      </div>
+
+                   
+
+          <div class="text">                                  
+        <p>Showcause Hearing or TLA Hearing of Trademark refers to hearing before the Registrar of Trademarks in connection with the objections raised by the Registrar under examination report issued on the application for Trademark Registration. The hearing at the registry can be attended in person by the applicant or through trademark agent or trademark attorney.</p>
+                      </div>
+                      
+                      <div class="sec-title">
+                          <h6><i class="flaticon-sunny-day-or-sun-weather"></i><span>Examination of Trademark Application </span></h6>
+                          <p>On filing the Trademark Application, the registrar shall formally examine the application to identify the inherent registrability of Trademark as per Act Rules and the similarity with existing marks already registered or applications filed. Thereafter the Registrar shall take decision whether to accept the application for advertisement as per Trademark Act / Rules. If the registrar is satisfied with the requirements and distinctiveness, the trademark shall be accepted and advertised.</p>
+                      </div>
+                      
+                      
+                      <div class="sec-title">
+                          <h6><i class="flaticon-sunny-day-or-sun-weather"></i><span>Examination Report &amp; Reply to Trademark Examination Report</span></h6>
+                            <p>If the Registrar is not satisfied with the distinctiveness of Trademark, an official examination report will be issued with reasons for Objections.</p>
+                            <p>If the Registrar raises any objections through examination report, the applicant has to furnish a written response and evidences of acquired distinctiveness with in 30 days of Examination Report. After </p>
+                              <p>submission of Reply to Trademark Examination Report, the registrar shall examine the reply and supporting evidences.</p>
+                              <p>Trademark Registration being judicial process, the Registrar has the discretionary power to call for a personal hearing on the matter. accept or reject the submissions. If the Reply to Trademark Examination Report is not accepted,  reply filed, the trademark status will get changed to “Ready for show cause hearing” and in few months hearing notice will be issued inside which the date and time of the hearing will be mentioned. The name of the concerned hearing officer will be mentioned on the same day of the trademark hearing. It is important to track your trademark status online in order prevent your brand name getting abandoned.</p>
+                      </div>
+                      
+                      
+                      <div class="sec-title">
+                          <h6><i class="flaticon-sunny-day-or-sun-weather"></i><span>Showcase Hearing or TLA (The Letter of Acceptance) Hearing</span></h6>
+                            <p>Trademark Registration being a judicial process, the acceptance of reply to Trademark Examination Report is up to the discretion of the Registrar. </p>
+                            <p>If the registrar is not satisfied with the reply filed for Trademark Examination Report, a personal hearing will be ordered for appearance before the Registrar for further submissions. If the registrar orders for a personal hearing, the status of Trademark application will be changed to “Ready for show cause Hearing”.</p>
+                              <p>The Registrar may also insist the applicant to file an affidavit testifying the exhibits and evidences to establish the usage of Trademark.</p>
+                              <p>Up on completion of hearing, if the registrar decide the trade mark application is allowable, a Letter of Acceptance (TLA order) will be issued and the trademark will be advertised in the Trade Marks Journal.</p>
+                      </div>
+                      
+                      <div class="sec-title">
+                          <h6><i class="flaticon-sunny-day-or-sun-weather"></i><span>Trademark Registration Certificate</span></h6>
+                            <p>Any person can oppose the trademark registration within 4 months of advertisement in the Trade Marks Journal. If there are no oppositions within 4 months of advertisement in the Trade Marks Journal, the Registrar shall issue the trademark registration certificate.</p>
+                      </div>
+                      
+                      <div class="sec-title">
+                          <h6><i class="flaticon-sunny-day-or-sun-weather"></i><span>Validity of Trademark Registration</span></h6>
+                            <p>The trademark registration Certificate is valid for 10 Years from the date of application. The trademark registration is required to be renewed every10 years thereafter.</p>
+                      </div>
+
+                  </div>                                    
+
+              </div>
+
+          </div>
+
+      </div>
+      
+      
+       <div class="row clearfix .align-items-center">                   
+
+          <div class="col-lg-12 col-md-12 col-sm-12 content-column">
+
+              <div class="content_block_5">
+              
+
+                  <div class="content-box">
+
+                      <div class="sec-title">
+                          
+                          <h3>Trademark Show Cause Hearing - Requirements</h3>
+
+                          <div class="title-shape"></div>
+
+                      </div>
+
+                   
+
+          
+                      
+                      <div class="sec-title">
+                          <h6><i class="flaticon-sunny-day-or-sun-weather"></i><span><strong>Notice of Hearing</strong></span></h6>
+                          <p>The Registrar of Trademark serves a Notice of hearing to the registered agent through Email with hearing schedule</p>
+                      </div>
+                      
+                      
+                      <div class="sec-title">
+                          <h6><i class="flaticon-sunny-day-or-sun-weather"></i><span>Date and Time of Hearing</span></h6>
+                            <p>Date/Time/Place of hearing will be stated in the notice of hearing.</p>
+                      </div>
+                      
+                      <div class="sec-title">
+                          <h6><i class="flaticon-sunny-day-or-sun-weather"></i><span>Attending the Hearing with Requited details</span></h6>
+                            <p>The hearing has to be attended on the scheduled date and time with required particulars to establish the case.</p>
+                      </div>
+                      
+                      <div class="sec-title">
+                          <h6><i class="flaticon-sunny-day-or-sun-weather"></i><span>Extension of Hearing</span></h6>
+                            <p>In case the party / agent is unable to attend the hearing, an extension for hearing can be applied before the date hearing and the hearing will accordingly be adjourned to a next date.</p>
+                      </div>
+
+                  </div>                                    
+
+              </div>
+
+          </div>
+
+      </div>
+      
+      
+      
+      <div class="row clearfix .align-items-center">                   
+
+          <div class="col-lg-12 col-md-12 col-sm-12 content-column">
+
+              <div class="content_block_5">
+              
+
+                  <div class="content-box">
+
+                      <div class="sec-title">
+                          
+                          <h3>Documents Required</h3>
+
+                          <div class="title-shape"></div>
+                          <div class="sec-title">
+                          <h6><i class="flaticon-sunny-day-or-sun-weather"></i><span>Documents Required For Trademark Hearing</span></h6>
+                            <p>Following are the documents for the trademark hearing:</p>
+                      </div>
+
+                      </div>
+
+                   
+
+          <div class="text">                                  
+        <p style="color: #ff3334;"><strong>1.	Trademark Application Number</strong></p>
+        <p style="color: #ff3334;"><strong>2.	Copy of Trademark Application (TM-A)</strong></p>
+        <p style="color: #ff3334;"><strong>3.	Copy of Examination Report</strong></p>
+        <p style="color: #ff3334;"><strong>4.	Copy of Reply to Examination Report</strong></p>
+        <p style="color: #ff3334;"><strong>5.	TLA Hearing Notice</strong></p>
+        <p style="color: #ff3334;"><strong>6.	Power of Attorney executed in favour of Trademark Agent</strong></p>
+        <p style="color: #ff3334;"><strong>7.	Affidavit of Trademark Usage, if any.</strong></p>
+        <p style="color: #ff3334;"><strong>8.	Summary Note for Appearance</strong></p>
+        <p style="color: #ff3334;"><strong>9.	Case references for Submissions</strong></p>
+        <p style="color: #ff3334;"><strong>10.	Proof of Business and Supporting documents</strong></p>
+                      </div>												
+
+                  </div>                                    
+
+              </div>
+
+          </div>
+
+      </div>
+      
+      
+      
+
+  </div>
+
+</section>
+
+<!-- about-style-three end -->
+    
+
+
+
+ <!-- Years of experiance Section Start -->
+ <section class="experience-section section-padding">
+  <div class="container">
+      <div class="section-title text-center">
+          <h2>15 Years Of Experience As An Attorney Firm</h2>
+      </div>
+      <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+              <div class="content text-center">
+                  <p>The firm: SUNRISE TRADE MARK CO. is a full-service intellectual property and technology law firm focused<br> on rendering business-friendly legal advice.</p>
+              </div>
+              <div class="section-subtitle text-center">
+                  <h3>2007</h3>
+                  <h6>
+                      <i class="fas fa-sun"></i>
+                      <span> COMPANY ESTABLISHED </span>
+                      <i class="fas fa-sun"></i>
+                  </h6>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Years of experiance Section End   -->
+
+
+
+
+        <!-- Footer Section -->
+        <div class="footer">
+          <!-- About Us Section -->
+          <div>
+            <h3>About Us</h3>
+            <p>
+              ‘A diverse and dynamic group‘, SUNRISE TRADE MARK CO. is a top flight
+              practice that protects and enforces IP assets from filing and
+              prosecuting patent and trade mark applications, through to IP
+              litigation, often concerning landmark cases.
+            </p>
+          </div>
+
+          <!-- Quick Links Section -->
+          <div>
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="trademark-registration.html">Trademark Registration</a></li>
+              <li><a href="Copyright.html">Copyright</a></li>
+              <li><a href="Design.html">Design</a></li>
+              <li><a href="iso.html">ISO</a></li>
+              <li><a href="Fssal.html">FSSAI (Food Licence)</a></li>
+              <li><a href="Msme.html">Pvt. Ltd, MSME/Udyam Reg.</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Us Section -->
+          <div>
+            <h3>Contact Us</h3>
+            <p>
+              <strong>Location</strong><br />Block B-4, Sunrise House, Gali No.-9,
+              Harsh Vihar, New Delhi-93
+            </p>
+            <p><strong>Phone</strong><br />+91 9818383866</p>
+            <p><strong>Email</strong><br />sunriseipr@gmail.com</p>
+          </div>
+
+          <!-- Enquiry Box Section -->
+          <div class="enquiry-box">
+            <h4>Enquiry Your Query</h4>
+            <p>Here you can enquire about issues and make requests.</p>
+            <button>ENQUIRY NOW</button>
+          </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="footer-copyright">
+          &copy; 2022 By <a href="#">Sunrise Trademark Co.</a> All Rights Reserved.
+        </div>
+
+        <!-- Font Awesome for icons (optional, include if you want icons in contact info) -->
+        <script
+          src="https://kit.fontawesome.com/a076d05399.js"
+          crossorigin="anonymous"
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Bootstrap and JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+
+        <script src="./js/script.js"></script>
+        <script src="./js/swiper.js"></script>  </body>
+    </html>

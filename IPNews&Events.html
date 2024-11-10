@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Font Awesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Responsive Header</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="./css/Responsive.css" /> -->
+
+
+        </head>
+
+   <body>
+
+
+    <div class="top-bar">
+      <div class="left-section">
+        <div class="since" style="color: #cc0000;">Since: 2007</div>
+        <div class="double-vertical-line">
+          <div class="vertical-line"></div>
+          
+        </div>
+      </div>
+    
+      <div class="right-section">
+        <div class="contact-info">
+          <span><i class="fa fa-space"></i> +91 9818333866</span>
+          <div class="double-vertical-line">
+            <div class="vertical-line"></div>
+          </div>
+          <span><i class="fa fa-space"></i> sunriseipr@gmail.com</span>
+        </div>
+        <div class="icon-group">
+          <i class="fa fa-space" style="padding: 2px;"></i>
+          <i class="fa fa-space" style="padding: 3px;"></i>
+          <i class="fa fa-space" style="padding: 4px;"></i>
+        </div>
+      </div>
+    </div>
+    
+
+
+
+        <!-- Header -->
+        <header class="header">
+          <!-- Logo -->
+          <img src="./image/logo.jpeg" alt="Sunrise Logo" class="logo" />
+        
+          <!-- Hamburger Icon for Mobile -->
+          <div id="hamburger-icon" class="hamburger-icon" onclick="toggleMenu()">☰</div>
+        
+          <!-- Close Icon for Mobile -->
+          <div id="close-icon" class="close-icon" onclick="toggleMenu()" style="display: none;">✕</div>
+        
+          <!-- Navigation Menu -->
+          <nav>
+              <ul id="nav-links" class="nav-links">
+                  <li><a href="index.html" class="active">Home</a></li>
+                  <li><a href="About.html">About</a></li>
+                  <li class="dropdown">
+                      <a href="#" class="dropbtn">Practice Areas</a>
+                      <div class="dropdown-content">
+                          <a href="trademark-registration.html">Trademark Registration</a>
+                          <a href="Design.html">Design</a>
+                          <a href="cop">Copyright</a>
+                          <a href="iso.html">ISO</a>
+                          <a href="Fssal.html">FSSAI (Food Licence)</a>
+                          <a href="Msme.html">Pvt. Ltd, MSME/Udyam Reg.</a>
+                      </div>
+                  </li>
+                  <li><a href="IPNews&Events.html">IP News & Events</a></li>
+                  <li><a href="Careers.html">Careers</a></li>
+                  <li><a href="ContactUs.html">Contact Us</a></li>
+              </ul>
+          </nav>
+        
+          <!-- Enquiry Button -->
+          <div class="button-container">
+              <button class="enquiry-button">Enquiry Now</button>
+          </div>
+        </header>
+        
+
+<!-- Enquiry Modal -->
+<div id="enquiryModal" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Enquiry Now</h2>
+      <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Enter name">
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Enter email">
+
+          <label for="mobile">Mobile No. :</label>
+          <input type="text" id="mobile" placeholder="Enter mobile no.">
+
+          <label for="service">Choose Service :</label>
+          <select id="service">
+              <option>Select Your Service</option>
+              <option>Service 1</option>
+              <option>Service 2</option>
+          </select>
+
+          <label for="message">Message :</label>
+          <textarea id="message" placeholder="Write Your Message ..."></textarea>
+
+          <button type="submit">Submit</button>
+      </form>
+  </div>
+</div>
+
+
+
+
+    <main>
+
+        <!-- Carousel with Contact Information Overlay -->
+
+            <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./image/home-banner.jpg" class="d-block w-100" alt="Image 1">
+                        <div class="info-card-tee">
+                      
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./image/home-banner-2.jpg" class="d-block w-100" alt="Image 2">
+                        <div class="info-card-tee">
+                        
+                        </div>
+                    </div>
+                  
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        
+         <!-- Info Cards Section - Positioned over Carousel -->
+              <div class="info-cards-container">
+                <div class="row">
+                  <div class="col-md-2">
+                    <div class="info-card-tee-static">
+                      <h5>J. P. Singh (Proprietor & Adv.)</h5>
+                      <p>(DELHI HIGH COURT)</p>
+                      <p><a href="mailto:sunriseipr@gmail.com">sunriseipr@gmail.com</a></p>
+                      <p>+91 9818383866 | +91 8800368866</p>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="info-card-tee-static">
+                      <h5>Sunita R. Singh (Proprietor & Adv.)</h5>
+                      <p>(DELHI HIGH COURT)</p>
+                      <p><a href="mailto:sunitaadvocateipr@gmail.com">sunitaadvocateipr@gmail.com</a></p>
+                      <p>+91 9650839235 | +91 7703859961</p>
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="info-card-tee-static">
+                      <h5>Sunrise Trademark Co.</h5>
+                      <p>SPECIALISED REGISTRATION SERVICE</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+        <div></div>
+        <div></div>
+
+            <section>
+                <div class="main-section-wrapper">
+                  <section class="main-section">
+                    <div class="text-container">
+                      <div class="title">Welcome To</div>
+                      <h1>SUNRISE TRADE MARK CO.</h1>
+                      <div class="underline"></div>
+                      <div class="text-box">
+                        ‘A diverse and dynamic group‘, SUNRISE TRADE MARK CO. is a top-flight practice that protects and enforces IP assets from filing and prosecuting patent and trademark applications, through to IP litigation, often concerning landmark cases.
+                      </div>
+                      <div class="text-box">
+                        The reputation of the esteemed practice head, ADV J. P. SINGH, precedes him for his mastery of all aspects of IP protection and enforcement and his contributions to policy matters. Senior ADV. J.P.SINGH heads the trademarks and broader commercial IP function, while ADV. SUNITA R.SINGH, an excellent advocate, heads the patents, designs, and trademarks sectors.
+                      </div>
+                      <div class="text-box">
+                        The firm: SUNRISE TRADE MARK CO. is a full-service intellectual property and technology law firm focused on rendering business-friendly legal advice.
+                      </div>
+                      
+                      <div class="contact-cards">
+                        <div class="card_cards">
+                          <div class="icon"></div>
+                          <div class="title">Contact Number</div>
+                          <div class="details">+91 9818383866 | +91 8800368866</div>
+                          <div class="details">+91 9650839235 | +91 7703859961</div>
+                        </div>
+                        <div class="card_cards">
+                          <div class="icon"></div>
+                          <div class="title">Chamber Number</div>
+                          <div class="details">528 Lawyers Chambers Block, Karkar Dooma</div>
+                          <div class="details">Shahdara, Delhi-92</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="image-container">
+                      <img src="./image/about.jpg" alt="Justice Scale" />
+                    </div>
+                  </section>
+                </div>
+              </section>
+
+    
+              <section class="offices-container">
+                <p>Specialised Registration Service</p>
+                <div class="headers">Explore Our Offices</div>
+              
+                <div class="offices">
+                  <!-- Karkar Dooma Court Card -->
+                  <div class="card office1">
+                    <div class="card-overlay">
+                      <div class="card-overlay-content">
+                        <div class="icon-placeholder">&#9633;</div>
+                        <div class="card-title">Karkar Dooma Court</div>
+                      </div>
+                      <p class="card-description">Chamber Karkar Dooma Court, Chamber No. 528 Lawyers Chambers Block, Karkar Dooma Shahdara New Delhi-92</p>
+                    </div>
+                  </div>
+              
+                  <!-- Head Office Card -->
+                  <div class="card office2">
+                    <div class="card-overlay">
+                      <div class="card-overlay-content">
+                        <div class="icon-placeholder">&#9633;</div>
+                        <div class="card-title">Head Office</div>
+                      </div>
+                      <p class="card-description">Chamber Karkar Dooma Court, Chamber No. 528 Lawyers Chambers Block, Karkar Dooma Shahdara New Delhi-92</p>
+                    </div>
+                  </div>
+              
+                  <!-- Ghaziabad Office Card -->
+            
+                </div>
+              </section>
+              
+              
+      
+      
+
+                            <h2>Our Legal Practice Areas</h2>
+
+                  <div class="grid-container">
+                      <div class="add">
+                          <img src="./image/blog/Copyright.jpg" alt="Trademark Registration">
+                          <h3>Trademark Registration</h3>
+                          <p>Registration of Trademark shall provide the exclusive right to the use...</p>
+                          <button class="button" onclick="showPopup('Trademark Registration')">READ MORE</button>
+                      </div>
+                      <div class="add">
+                          <img src="./image/blog/FSSAI.jpg" alt="Patent Filing">
+                          <h3>Copyright</h3>
+                          <p>A copyright gives exclusive rights to persons who create original works...</p>
+                          <button class="button" onclick="showPopup('Patent Filing')">READ MORE</button>
+                      </div>
+                      <!-- More cards can be added similarly -->
+
+                      <div class="add">
+                          <img src="./image/blog/Law-Services.jpg" alt="Patent Filing">
+                          <h3>Design</h3>
+                          <p>A design patent is a type of patent that protects the way...</p>
+                          <button class="button" onclick="showPopup('Patent Filing')">READ MORE</button>
+                      </div>
+                  </div>
+
+
+                  <div class="grid-container">
+                      <div class="add">
+                          <img src="./image/blog/Law-Services.jpg" alt="Trademark Registration">
+                          <h3>Patent</h3>
+                          <!-- <p>Registration of Trademark shall provide the exclusive right to the use...</p> -->
+                          <button class="button" onclick="showPopup('Trademark Registration')">READ MORE</button>
+                      </div>
+                      <div class="add">
+                          <img src="./image/blog/Litigation.jpg" alt="Patent Filing">
+                          <h3>Litigation</h3>
+                          <!-- <p>Filing for a patent provides a shield for your inventions and exclusive rights...</p> -->
+                          <button class="button" onclick="showPopup('Patent Filing')">READ MORE</button>
+                      </div>
+                      <!-- More cards can be added similarly -->
+
+                      <div class="add">
+                          <img src="./image/blog/MSME.jpg" alt="Patent Filing">
+                          <h3>Other Law Services</h3>
+                          <!-- <p>Filing for a patent provides a shield for your inventions and exclusive rights...</p> -->
+                          <button class="button" onclick="showPopup('Patent Filing')">READ MORE</button>
+                      </div>
+                  </div>
+
+                  <div class="grid-container">
+                      <div class="add">
+                          <img src="./image/blog/patent.jpg" alt="Trademark Registration">
+                          <h3>ISO</h3>
+                          <p>Registration of Trademark shall provide the exclusive right to the use...</p>
+                          <button class="button" onclick="showPopup('Trademark Registration')">READ MORE</button>
+                      </div>
+                      <div class="add">
+                          <img src="./image/blog/Trademark-Registration.jpg" alt="Patent Filing">
+                          <h3>FSSAI(Food Licence)</h3>
+                          <p>Filing for a patent provides a shield for your inventions and exclusive rights...</p>
+                          <button class="button" onclick="showPopup('Patent Filing')">READ MORE</button>
+                      </div>
+                      <!-- More cards can be added similarly -->
+
+                      <div class="add">
+                          <img src="./image/blog/patent.jpg" alt="Patent Filing">
+                          <h3>PVT. Ltd, MSME/Udyam Reg.</h3>
+                          <p>Filing for a patent provides a shield for your inventions and exclusive rights...</p>
+                          <button class="button" onclick="showPopup('Patent Filing')">READ MORE</button>
+                      </div>
+                  </div>
+
+                  <!-- Popup Modal -->
+                  <div class="popup" id="popup">
+                      <div class="popup-content">
+                          <button class="close" onclick="closePopup()">&times;</button>
+                          <h3 id="popupTitle"></h3>
+                          <p id="popupDescription">More details about the service...</p>
+                      </div>
+                  </div>
+
+
+
+
+                  <section>
+                    <h2>15 Years Of Experience As An Attorney Firm</h2>
+
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and typesetting
+                      industry. Lorem Ipsum has been the industry's standard dummy text ever
+                      since the 1500s, when an unknown printer took a galley of type and
+                      scrambled it to make a type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting, remaining
+                      essentially unchanged. It was popularised in.
+                    </p>
+
+                    <div class="established">
+                      <p class="year">2007</p>
+                  <center><span>COMPANY ESTABLISHED</span></center>
+                  
+                  </div>
+                  </section>
+
+
+
+
+              <div class="new-div">
+                  <div class="testimonial-heading">
+                      <p>Our Testimonials</p>
+                  </div>
+
+                  <!-- Swiper Container -->
+                  <div class="swiper-container">
+                      <!-- Wrapper for slides -->
+                      <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                              <div class="testimonial-card">
+                                  <img src="./image/Testimonials/testimonial-1.png" alt="User 1">
+                                  <div class="testimonial-text">"This is an amazing service! Highly recommend it."</div>
+                                  <div class="testimonial-name">John Doe</div>
+                                  <div class="testimonial-position">CEO, Company A</div>
+                              </div>
+                              <div class="testimonial-card">
+                                  <img src="./image/Testimonials/testimonial-2.png" alt="User 2">
+                                  <div class="testimonial-text">"I had a great experience, will definitely come back!"</div>
+                                  <div class="testimonial-name">Jane Smith</div>
+                                  <div class="testimonial-position">Marketing Director, Company B</div>
+                              </div>
+
+                              <div class="testimonial-card">
+                                <img src="./image/Testimonials/testimonial-3 (1).png" alt="User 2">
+                                <div class="testimonial-text">"I had a great experience, will definitely come back!"</div>
+                                <div class="testimonial-name">Jane Smith</div>
+                                <div class="testimonial-position">Marketing Director, Company B</div>
+                            </div>
+                          </div>
+
+                          <div class="swiper-slide">
+                              <div class="testimonial-card">
+                                  <img src="./image/Testimonials/testimonial-1.png" alt="User 4">
+                                  <div class="testimonial-text">"Great value for money. Highly recommended."</div>
+                                  <div class="testimonial-name">Michael Brown</div>
+                                  <div class="testimonial-position">CTO, Company D</div>
+                              </div>
+                              <div class="testimonial-card">
+                                  <img src="./image/Testimonials/testimonial-2.png" alt="User 5">
+                                  <div class="testimonial-text">"A great experience overall, will definitely return!"</div>
+                                  <div class="testimonial-name">Emily White</div>
+                                  <div class="testimonial-position">HR Manager, Company E</div>
+                              </div>
+
+                              <div class="testimonial-card">
+                                <img src="./image/Testimonials/testimonial-3 (1).png" alt="User 2">
+                                <div class="testimonial-text">"I had a great experience, will definitely come back!"</div>
+                                <div class="testimonial-name">Jane Smith</div>
+                                <div class="testimonial-position">Marketing Director, Company B</div>
+                            </div>
+                          </div>
+                      </div>
+
+                      <!-- Add Pagination -->
+                      <div class="swiper-pagination"></div>
+
+                      <!-- Add Navigation -->
+                      <div class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+                      <div class="swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
+                  </div>
+              </div>
+
+            
+              <div class="blog-container">
+                <h2>Latest From Our Blog</h2>
+                <div class="line"></div>
+                
+              </div>
+              
+              
+
+
+        <!-- Footer Section -->
+        <div class="footer">
+          <!-- About Us Section -->
+          <div>
+            <h3>About Us</h3>
+            <p>
+              ‘A diverse and dynamic group‘, SUNRISE TRADE MARK CO. is a top flight
+              practice that protects and enforces IP assets from filing and
+              prosecuting patent and trade mark applications, through to IP
+              litigation, often concerning landmark cases.
+            </p>
+          </div>
+
+          <!-- Quick Links Section -->
+          <div>
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="trademark-registration.html">Trademark Registration</a></li>
+              <li><a href="Copyright.html">Copyright</a></li>
+              <li><a href="Design.html">Design</a></li>
+              <li><a href="iso.html">ISO</a></li>
+              <li><a href="Fssal.html">FSSAI (Food Licence)</a></li>
+              <li><a href="Msme.html">Pvt. Ltd, MSME/Udyam Reg.</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Us Section -->
+          <div>
+            <h3>Contact Us</h3>
+            <p>
+              <strong>Location</strong><br />Block B-4, Sunrise House, Gali No.-9,
+              Harsh Vihar, New Delhi-93
+            </p>
+            <p><strong>Phone</strong><br />+91 9818383866</p>
+            <p><strong>Email</strong><br />sunriseipr@gmail.com</p>
+          </div>
+
+          <!-- Enquiry Box Section -->
+          <div class="enquiry-box">
+            <h4>Enquiry Your Query</h4>
+            <p>Here you can enquire about issues and make requests.</p>
+            <button>ENQUIRY NOW</button>
+          </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="footer-copyright">
+          &copy; 2022 By <a href="#">Sunrise Trademark Co.</a> All Rights Reserved.
+        </div>
+
+        <!-- Font Awesome for icons (optional, include if you want icons in contact info) -->
+        <script
+          src="https://kit.fontawesome.com/a076d05399.js"
+          crossorigin="anonymous"
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Bootstrap and JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+
+        <script src="./js/script.js"></script>
+        <script src="./js/swiper.js"></script>  </body>
+    </html>

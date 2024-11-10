@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Font Awesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Responsive</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="./css/Responsive.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
+
+
+    <!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+<!-- jQuery (required by Owl Carousel) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+</head>
+
+   <body>
+
+
+    <div class="top-bar">
+      <div class="left-section">
+        <div class="since" style="color: #cc0000;">Since: 2007</div>
+        <div class="double-vertical-line">
+          <div class="vertical-line"></div>
+          
+        </div>
+      </div>
+    
+      <div class="right-section">
+        <div class="contact-info">
+          <span><i class="fa fa-space"></i> +91 9818333866</span>
+          <div class="double-vertical-line">
+            <div class="vertical-line"></div>
+          </div>
+          <span><i class="fa fa-space"></i> sunriseipr@gmail.com</span>
+        </div>
+        <div class="icon-group">
+          <i class="fa fa-space" style="padding: 2px;"></i>
+          <i class="fa fa-space" style="padding: 3px;"></i>
+          <i class="fa fa-space" style="padding: 4px;"></i>
+        </div>
+      </div>
+    </div>
+    
+        <!-- Header -->
+        <header class="header">
+          <img src="./image/logo.jpeg" alt="Sunrise Logo" class="logo" />
+        
+          <!-- Hamburger Icon for Mobile -->
+          <div id="hamburger-icon" class="hamburger-icon" onclick="toggleMenu()">☰</div>
+        
+          <!-- Close Icon for Mobile -->
+          <div id="close-icon" class="close-icon" onclick="toggleMenu()" style="display: none;">✕</div>
+        
+          <!-- Navigation Menu -->
+
+          <nav>
+            <ul id="nav-links" class="nav-links">
+                <li><a href="index.html" class="">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li class="dropdown">
+                    <a href="blog.html" class="dropbtn">Practice Areas</a>
+                    <div class="dropdown-content">
+                        <a href="trademark-registration.html">Trademark Registration</a>
+                        <a href="Design.html">Design</a>
+                        <a href="Copyright.html">Copyright</a>
+                        <a href="iso.html">ISO</a>
+                        <a href="Fssal.html">FSSAI (Food Licence)</a>
+                        <a href="Msme.html">Pvt. Ltd, MSME/Udyam Reg.</a>
+                    </div>
+                </li>
+                <li><a href="blog.html">IP News & Events</a></li>
+                <li><a href="Careers.html">Careers</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        
+
+
+
+          
+          <!-- Enquiry Button -->
+          <div class="button-container">
+              <button class="enquiry-button">Enquiry Now</button>
+          </div>
+        </header>
+        
+
+                    <!-- Enquiry Modal -->
+                    <div id="enquiryModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <h2 class="form-heading">Enquiry Now</h2>
+
+                        <form>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" placeholder="Enter name">
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" placeholder="Enter email">
+
+                            <label for="mobile">Mobile No. :</label>
+                            <input type="text" id="mobile" placeholder="Enter mobile no.">
+
+                            <label for="service">Choose Service :</label>
+                            <select id="service">
+                                <option>Select Your Service</option>
+                                <option>Service 1</option>
+                                <option>Service 2</option>
+                            </select>
+
+                            <label for="message">Message :</label>
+                            <textarea id="message" placeholder="Write Your Message ..."></textarea>
+
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                    </div>
+
+
+
+
+         <!-- activities-section start -->
+
+            <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./image/home-banner.jpg" class="d-block w-100" alt="Image 1">
+                        <div class="info-card-tee">
+                      
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./image/home-banner-2.jpg" class="d-block w-100" alt="Image 2">
+                        <div class="info-card-tee">
+                        
+                        </div>
+                    </div>
+                  
+                    <div class="carousel-item active">
+                      <img src="./image/home-banner.jpg" class="d-block w-100" alt="Image 1">
+                      <div class="info-card-tee">
+                    
+                      </div>
+                  </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden"></span>
+                  <i class="fa-thin fa-square-full"></i>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden"></span>
+                    <i class="fa-thin fa-square-full"></i>
+                    <!-- <i class="fa-regular fa-circle"></i>  -->
+
+
+                  </button>
+            </div>
+
+    
+
+        
+         <!-- Info Cards Section - Positioned over Carousel -->
+
+       <div class="info-cards-container">
+    <div class="row_cards">
+        <div class="col-md-3">
+            <div class="info-card-tee-static">
+              <i class="fa-thin fa-square-full"></i>
+
+                <h5>J. P. Singh (Proprietor & Adv.)</h5>
+                <p>(DELHI HIGH COURT)</p>
+                <p><a href="mailto:sunriseipr@gmail.com">sunriseipr@gmail.com</a></p>
+                <p style="color: #d32f2f;">+91 9818383866 | +91 8800368866</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="info-card-tee-static">
+              <i class="fa-thin fa-square-full"></i>
+
+                <h5>Sunita R. Singh (Proprietor & Adv.)</h5>
+                <p>(DELHI HIGH COURT)</p>
+                <p><a href="mailto:sunitaadvocateipr@gmail.com">sunitaadvocateipr@gmail.com</a></p>
+                <p style="color: #d32f2f;">+91 9650839235 | +91 7703859961</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="info-card-tee-static">
+              <i class="fa-thin fa-square-full"></i>
+
+                <h5>Sunrise Trademark Co.</h5>
+                <p>SPECIALISED REGISTRATION SERVICE</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!-- activities-section end -->
+
+
+    
+<!-- about-section -->
+        <section class="about-section sec-pad bg-color-1">
+
+            <div class="auto-container">
+
+                <div class="row clearfix">
+
+                    <div class="col-lg-6 col-md-12 col-sm-12 content-column">
+
+                        <div class="content_block_1">
+
+                            <div class="content-box">
+
+                                <div class="sec-title">
+
+                                    <h6><i class="flaticon-sunny-day-or-sun-weather"></i><span>               
+                                       <i class="fa-thin fa-square-full"></i>
+                                   Welcome to Sunrise Trademark Co.</span></h6>
+
+                                    <h2>About Sunrise Trademark Co.</h2>
+
+                                    <div class="title-shape"></div>
+
+                                </div>
+
+                                <div class="text about-read-more">
+
+                                    <h5>‘A diverse and dynamic group‘, SUNRISE TRADE MARK CO. is a top flight practice that protects and enforces IP assets from filing and prosecuting patent and trade mark applications, through to IP litigation, often concerning landmark cases. The reputation of the esteemed practice head, ADV J. P. SINGH , precedes him for his mastery of all aspects of IP protection and enforcement and his contributions to policy matters. Senior ADV. J.P.SINGH heads the trade marks and broader commercial IP function and ADV. SUNITA R.SINGH is the EXCELENT ADVOCATE who heads the patents, designs, TRADE MARK. Practice head(s): ADV. J.P.SINGH AND ADV. SUNITA R. SINGH</h5>
+
+                                  
+
+									<li>
+
+                                        <a href="">
+
+                                         <i class="flaticon-right-arrow" style="font-size: 14px;"></i>
+
+                                         <span><i class="fa-thin fa-square-full"></i>
+                                             Read More</span>
+
+                                </a>
+
+                                </div>                                
+
+                                <div class="lower-box">
+                                  <div class="row clearfix">
+                                      <!-- Contact Number Section -->
+                                      <div class="col-lg-12 col-md-12 col-sm-12 single-column">
+                                          <div class="single-item wow fadeInLeft animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                                            <div class="icon-box"><i class="fa-thin fa-square-full"></i></div>
+                                            <div class="text-container">
+                                                  <h5 >Contact Number</h5>
+                                                  <p><a href="#">+91 9818383866</a> | <a href="#">+91 8800368866</a></p>
+                                                  <p><a href="#">+91 9650839235</a> | <a href="#">+91 7703859961</a></p>
+                                              </div>
+                                          </div>
+                                      </div>
+                              
+                                      <!-- Chamber Number Section -->
+                                      <div class="col-lg-12 col-md-12 col-sm-12 single-column" style="margin-top:31px;">
+                                          <div class="single-item wow fadeInRight animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                                            <div class="icon-box"><i class="fa-thin fa-square-full"></i></div>
+
+                                              <div class="text-container">
+                                                  <h5>Chamber Number</h5>
+                                                  <p><a href="#">528 Lawyers Chambers Block, Karkar Dooma<br>Shahdara, Delhi-92</a></p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6 col-md-12 col-sm-12 image-column">
+
+                        <div class="image_block_1">
+
+                            <div class="image-box">
+
+                                <figure class="image"><img src="./image/about.jpg" alt=""></figure>
+
+                                
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- about-section end -->
+    
+
+<!-- explore-section -->
+<section class="explore-section centred bg-color-2" style="background-image: url(./image/bg5.jpg); background-size: cover;  background-repeat: no-repeat;">
+
+  <div class="pattern-layer"></div>
+
+  <div class="auto-container">
+
+  <center> <div class="sec-title centred light">
+
+          <center><h6><i class="flaticon-sunny-day-or-sun-weather"></i><span>Specialised Registration Service</span><i class="flaticon-sunny-day-or-sun-weather"></i></h6></center>
+
+          <h2>Explore Our Offices</h2>
+
+          <div class="title-shape"></div>
+
+      </div></center>
+
+      <div class="row clearfix">
+          
+          <div class="col-lg-2 col-md-6 col-sm-12 explore-block"></div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 explore-block">
+
+              <div class="explore-block-one wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+
+                  <div class="inner-box">
+
+                      <figure class="image-box"><img src="./image/cart/court.jpg" alt=""></figure>
+
+                      <div class="content-box">
+
+                          <div class="text">
+
+                              <div class="icon-box"></div>
+
+                              <h4>Karkar Dooma Court</h4>
+
+                          </div>
+
+                          <div class="overlay-content">
+
+                              <h4>Chamber <br/>Karkar Dooma Court</h4>
+
+                              <p>Chamber No. 528 Lawyers Chambers Block, Karkar Dooma Shahdara New Delhi-92</p>                                      
+
+                          </div>
+
+                      </div>
+
+                  </div>
+
+              </div>
+
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 explore-block">
+
+              <div class="explore-block-one wow fadeInUp animated animated" data-wow-delay="300ms" data-wow-duration="1500ms">
+
+                  <div class="inner-box">
+
+                      <figure class="image-box"><img src="./image/cart/headoffice.jpg" alt=""></figure>
+
+                      <div class="content-box">
+
+                          <div class="text">
+
+                              <div class="icon-box  "></div>
+
+                              <h4>Head Office</h4>
+
+                          </div>
+
+                          <div class="overlay-content">
+
+                              <h4>Head Office </h4>
+
+                              <p>Block B-4, Sunrise House, Gali No.-9, Harsh Vihar, New Delhi-93</p>
+                             
+
+                          </div>
+
+                      </div>
+
+                  </div>
+
+              </div>
+
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-12 explore-block"></div>
+
+          
+
+      </div>
+
+  </div>
+
+</section>
+<!-- explore-section end -->
+
+
+
+
+
+
+ <!-- Service Section sunny-day-or-sun-weathert -->
+
+
+        <!-- Service Section  -->
+ <section class="team-section sec-pad bg-color-1">
+
+  <div class="auto-container">
+  
+          <div class="sec-title centred">
+  
+          <h2>Our Legal Practice Areas</h2>
+  
+          <div class="title-shape"></div>
+  
+          </div>
+  
+      <div class="row clearfix">
+  
+          
+          <div class="col-lg-4 col-md-6 col-sm-12 team-block">
+  
+              <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+  
+                  <div class="inner-box">
+  
+                      <figure class="image-box"><a href="#"><img src="./image/cart/Trademark-Registration.jpg"" alt=""></a></figure>
+  
+                      <div class="lower-content">
+  
+                          <div class="author-box"></br>
+  
+                              <h4><a href="#">Trademark Registration</a></h4>
+  
+                              <span class="designation">Registration of Trademark shall provide the exclusive right to the use...</span>
+                              </br>
+                              <div class="btn-box">
+                                  <a href="#" class="theme-btn our-service-btn">Read More</a>
+                              </div></br>
+  
+                          </div>                    
+  
+                      </div>
+  
+                  </div>
+  
+              </div>
+  
+          </div>
+  
+        
+  
+          <div class="col-lg-4 col-md-6 col-sm-12 team-block">
+  
+              <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+  
+                  <div class="inner-box">
+  
+                      <figure class="image-box"><a href="#"><img src="./image/cart/Copyright.jpg" alt=""></a></figure>
+  
+                      <div class="lower-content">
+  
+                          <div class="author-box"></br>
+  
+                              <h4><a href="#">Copyright</a></h4>
+  
+                              <span class="designation">A copyright gives exclusive rights to persons who create original works...</span>
+                              </br>
+                              <div class="btn-box">
+                                  <a href="" class="theme-btn our-service-btn">Read More</a>
+                              </div></br>
+  
+                          </div>                    
+  
+                      </div>
+  
+                  </div>
+  
+              </div>
+  
+          </div>
+  
+          <div class="col-lg-4 col-md-6 col-sm-12 team-block">
+  
+              <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+  
+                  <div class="inner-box">
+  
+                      <figure class="image-box"><a href="copyright.php"><img src="./image/cart/design.jpg" alt=""></a></figure>
+  
+                      <div class="lower-content">
+  
+                          <div class="author-box"></br>
+  
+                              <h4><a href="#">Design</a></h4>
+  
+                              <span class="designation">A design patent is a type of patent that protects the way...</span>
+                              </br>
+                              <div class="btn-box">
+                                  <a href="#" class="theme-btn our-service-btn">Read More</a>
+                              </div></br>
+  
+                          </div>                    
+  
+                      </div>
+  
+                  </div>
+  
+              </div>
+  
+          </div>
+          
+          <div class="col-lg-4 col-md-6 col-sm-12 team-block">
+  
+              <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+  
+                  <div class="inner-box">
+  
+                      <figure class="image-box"><a href="#"><img src="./image/cart/patent.jpg" alt=""></a></figure>
+  
+                      <div class="lower-content">
+  
+                          <div class="author-box"></br>
+  
+                              <h4><a href="#"">Patent</a></h4>
+  
+                              </br>
+                              <div class="btn-box">
+                                  <a href="#" class="theme-btn our-service-btn" data-toggle="modal" data-target="#myModal">Read More</a>
+                              </div></br>
+  
+                          </div>                    
+  
+                      </div>
+  
+                  </div>
+  
+              </div>
+  
+          </div>
+          
+          <div class="col-lg-4 col-md-6 col-sm-12 team-block">
+  
+              <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+  
+                  <div class="inner-box">
+  
+                      <figure class="image-box"><a href="litigation.php"><img src="./image/cart/Litigation.jpg" alt=""></a></figure>
+  
+                      <div class="lower-content">
+  
+                          <div class="author-box"></br>
+  
+                              <h4><a href="#">Litigation</a></h4>
+  
+                              </br>
+                              <div class="btn-box">
+                                  <a href="#" class="theme-btn our-service-btn" data-toggle="modal" data-target="#myModal">Enquiry</a>
+                              </div></br>
+  
+                          </div>                    
+  
+                      </div>
+  
+                  </div>
+  
+              </div>
+  
+          </div>
+          
+          <div class="col-lg-4 col-md-6 col-sm-12 team-block">
+  
+              <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+  
+                  <div class="inner-box">
+  
+                      <figure class="image-box"><a href="other-law-services.php"><img src="./image/cart/Law-Services.jpg" alt=""></a></figure>
+  
+                      <div class="lower-content">
+  
+                          <div class="author-box"></br>
+  
+                              <h4><a href="#">Other Law Services</a></h4>
+                              <br>
+                              <div class="btn-box">
+                                  <a href="#" class="theme-btn our-service-btn" data-toggle="modal" data-target="#myModal">Enquiry</a>
+                              </div></br>
+  
+                          </div>                    
+  
+                      </div>
+  
+                  </div>
+  
+              </div>
+  
+          </div>
+  
+  
+          <div class="col-lg-4 col-md-6 col-sm-12 team-block">
+  
+              <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+  
+                  <div class="inner-box">
+  
+                      <figure class="image-box"><a href="#"><img src="./image/cart/ISO.jpg" alt=""></a></figure>
+  
+                      <div class="lower-content">
+  
+                          <div class="author-box"></br>
+  
+                              <h4><a href="#">ISO</a></h4>
+  
+                              <span class="designation">ISO refers to International Organization for Standardisation.</span>
+                              </br>
+                              <div class="btn-box">
+                                  <a href="#" class="theme-btn our-service-btn">Read More</a>
+                              </div></br>
+  
+                          </div>                    
+  
+                      </div>
+  
+                  </div>
+  
+              </div>
+  
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 team-block">
+  
+              <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+  
+                  <div class="inner-box">
+  
+                      <figure class="image-box"><a href="#"><img src="./image/cart/FSSAI.jpg" alt=""></a></figure>
+  
+                      <div class="lower-content">
+  
+                          <div class="author-box"></br>
+  
+                              <h4><a href="fssai.php">FSSAI (Food Licence)</a></h4>
+  
+                              <span class="designation">The Food Safety and Standards Authority of India...</span>
+                              </br>
+                              <div class="btn-box">
+                                  <a href="fssai.php" class="theme-btn our-service-btn">Read More</a>
+                              </div></br>
+  
+                          </div>                    
+  
+                      </div>
+  
+                  </div>
+  
+              </div>
+  
+          </div>
+  
+  
+          <div class="col-lg-4 col-md-6 col-sm-12 team-block">
+  
+  <div class="team-block-one wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+  
+      <div class="inner-box">
+  
+          <figure class="image-box"><a href="#"><img src="./image/cart/MSME.jpg" alt=""></a></figure>
+  
+          <div class="lower-content">
+  
+              <div class="author-box"></br>
+  
+                  <h4><a href="#">PVT. Ltd, MSME/Udyam Reg.</a></h4>
+  
+                  <span class="designation">Beginning a company is an exciting and gratifying process...</span>
+                  </br>
+
+                  <div class="btn-box">
+                      <a href="#" class="theme-btn our-service-btn">Read More</a>
+                  </div></br>
+  
+              </div>                    
+  
+          </div>
+  
+      </div>
+  
+  </div>
+  
+  </div>
+  
+        <!-- Service Section   end -->
+          
+  
+      </div>
+  
+  </div>
+  
+  </section>
+  
+  
+
+
+
+
+   <!-- Years of experiance Section Start -->
+   <section class="experience-section section-padding">
+    <div class="container">
+        <div class="section-title text-center">
+            <h2>15 Years Of Experience As An Attorney Firm</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="content text-center">
+                    <p>The firm: SUNRISE TRADE MARK CO. is a full-service intellectual property and technology law firm focused<br> on rendering business-friendly legal advice.</p>
+                </div>
+                <div class="section-subtitle text-center">
+                    <h3>2007</h3>
+                    <h6>
+                        <i class="fas fa-sun"></i>
+                        <span> COMPANY ESTABLISHED </span>
+                        <i class="fas fa-sun"></i>
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Years of experiance Section End   -->
+
+
+
+<!-- testimonial-section -->
+
+<section class="testimonial-section centred" style="background-image: url(./image/Testimonials/testimonial-bg.jpg);">
+  <div class="auto-container">
+    <div class="sec-title centred light">                   
+      <h2>Our Testimonials</h2>
+      <div class="title-shape"></div>
+    </div>
+
+    <div class="three-item-carousel owl-carousel owl-theme">
+      <!-- Testimonial 1 -->
+      <div class="testimonial-block-one">
+        <div class="inner-box">
+          <figure class="image-box"><img src="./image/Testimonials/testimonial-1.png" alt=""></figure>
+          <div class="text">
+            <p>They have an amazing ability to deal with pressure, while having the patience to explain complex legal requirements in simple terms to the client. On top of that they understand our business and our perspective.</p>
+          </div>
+          <div class="author-box">
+            <h4>Ravi Sharma</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="testimonial-block-one">
+        <div class="inner-box">
+          <figure class="image-box"><img src="./image/Testimonials/testimonial-2.png" alt=""></figure>
+          <div class="text">
+            <p>The Lawyers of this firm have been of great assistance to me. Their step by step and methodical guidance has ensured that not only was my query resolved satisfactorily but the entire experience was smooth. I definitely recommend Vivek Law Firm as professional firm.</p>
+          </div>
+          <div class="author-box">
+            <h4>Shekhar</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="testimonial-block-one">
+        <div class="inner-box">
+          <figure class="image-box"><img src="./image/Testimonials/testimonial-3 (1).png" alt=""></figure>
+          <div class="text">
+            <p>We highly recommend ADV J. P. SINGH  -  they are truly professional and "results' oriented"... Our publishing company is at ease knowing they have our back!</p>
+          </div>
+          <div class="author-box">
+            <h4>Shivenika Singh</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Testimonials as needed -->
+
+    </div>
+  </div>
+</section>
+
+<script>
+  $(document).ready(function(){
+    $('.three-item-carousel').owlCarousel({
+      items: 1,  // Default: 1 item for small screens
+      loop: true,
+      margin: 30,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: true,
+      dots: true,
+      nav: true,
+      navText: ["<span class='owl-nav-prev'>&#10094;</span>","<span class='owl-nav-next'>&#10095;</span>"],
+      responsive: {
+        0: { items: 1 },  // 1 item for small screens (phones)
+        600: { items: 1 },  // 1 item for medium screens (tablets)
+        1000: { items: 3 }  // 3 items for large screens (laptops/desktops)
+      }
+    });
+  });
+</script>
+
+<!-- testimonial-section end -->
+
+
+
+
+
+        <!-- news-section -->
+        <section class="news-section bg-color-1">
+
+          <div class="auto-container">
+
+              <div class="sec-title centred">
+
+                  <h6></h6>
+
+                  <h2>Latest From Our Blog</h2>
+
+                  <div class="title-shape"></div>
+
+              </div>
+
+              <div class="row clearfix">
+              </div>
+
+          </div>
+
+      </section>
+      <!-- news-section end -->
+
+
+        <!-- Footer Section -->
+        <div class="footer">
+          <!-- About Us Section -->
+          <div>
+            <h3>About Us</h3>
+            <p>
+              ‘A diverse and dynamic group‘, SUNRISE TRADE MARK CO. is a top flight
+              practice that protects and enforces IP assets from filing and
+              prosecuting patent and trade mark applications, through to IP
+              litigation, often concerning landmark cases.
+            </p>
+          </div>
+
+          <!-- Quick Links Section -->
+          <div>
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="trademark-registration.html">Trademark Registration</a></li>
+              <li><a href="Copyright.html">Copyright</a></li>
+              <li><a href="Design.html">Design</a></li>
+              <li><a href="iso.html">ISO</a></li>
+              <li><a href="Fssal.html">FSSAI (Food Licence)</a></li>
+              <li><a href="Msme.html">Pvt. Ltd, MSME/Udyam Reg.</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Us Section -->
+          <div>
+            <h3>Contact Us</h3>
+            <p>
+              <strong>Location</strong><br />Block B-4, Sunrise House, Gali No.-9,
+              Harsh Vihar, New Delhi-93
+            </p>
+            <p><strong>Phone</strong><br />+91 9818383866</p>
+            <p><strong>Email</strong><br />sunriseipr@gmail.com</p>
+          </div>
+
+          <!-- Enquiry Box Section -->
+          <div class="enquiry-box">
+            <h4>Enquiry Your Query</h4>
+            <p>Here you can enquire about issues and make requests.</p>
+            <button>ENQUIRY NOW</button>
+          </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="footer-copyright">
+          &copy; 2022 By <a href="#">Sunrise Trademark Co.</a> All Rights Reserved.
+        </div>
+
+        <!-- Font Awesome for icons (optional, include if you want icons in contact info) -->
+        <script
+          src="https://kit.fontawesome.com/a076d05399.js"
+          crossorigin="anonymous"
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Bootstrap and JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+
+        <script src="./js/script.js"></script>
+        <script src="./js/swiper.js"></script>  </body>
+    </html>

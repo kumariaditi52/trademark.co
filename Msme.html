@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Font Awesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Responsive Header</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style1.css" />
+    <link rel="stylesheet" href="./css/style2.css" />
+
+
+    <!-- <link rel="stylesheet" href="./css/Responsive.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
+
+
+    <!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+<!-- jQuery (required by Owl Carousel) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+        </head>
+
+   <body>
+
+
+    <div class="top-bar">
+      <div class="left-section">
+        <div class="since" style="color: #cc0000;">Since: 2007</div>
+        <div class="double-vertical-line">
+          <div class="vertical-line"></div>
+          
+        </div>
+      </div>
+    
+      <div class="right-section">
+        <div class="contact-info">
+          <span><i class="fa fa-space"></i> +91 9818333866</span>
+          <div class="double-vertical-line">
+            <div class="vertical-line"></div>
+          </div>
+          <span><i class="fa fa-space"></i> sunriseipr@gmail.com</span>
+        </div>
+        <div class="icon-group">
+          <i class="fa fa-space" style="padding: 2px;"></i>
+          <i class="fa fa-space" style="padding: 3px;"></i>
+          <i class="fa fa-space" style="padding: 4px;"></i>
+        </div>
+      </div>
+    </div>
+    
+
+
+
+        <!-- Header -->
+        <header class="header">
+          <img src="./image/logo.jpeg" alt="Sunrise Logo" class="logo" />
+        
+          <!-- Hamburger Icon for Mobile -->
+          <div id="hamburger-icon" class="hamburger-icon" onclick="toggleMenu()">☰</div>
+        
+          <!-- Close Icon for Mobile -->
+          <div id="close-icon" class="close-icon" onclick="toggleMenu()" style="display: none;">✕</div>
+        
+          <!-- Navigation Menu -->
+          <nav>
+              <ul id="nav-links" class="nav-links">
+                  <li><a href="index.html" class="">Home</a></li>
+                  <li><a href="About.html">About</a></li>
+                  <li class="dropdown">
+                      <a href="blog.html" class="dropbtn">Practice Areas</a>
+                      <div class="dropdown-content">
+                          <a href="trademark-registration.html">Trademark Registration</a>
+                          <a href="Design.html">Design</a>
+                          <a href="Copyright.html">Copyright</a>
+                          <a href="iso.html">ISO</a>
+                          <a href="Fssal.html">FSSAI (Food Licence)</a>
+                          <a href="Msme.html">Pvt. Ltd, MSME/Udyam Reg.</a>
+                      </div>
+                  </li>
+                  <li><a href="blog.html">IP News & Events</a></li>
+                  <li><a href="Careers.html">Careers</a></li>
+                  <li><a href="ContactUs.html">Contact Us</a></li>
+              </ul>
+          </nav>
+        
+
+
+
+          
+          <!-- Enquiry Button -->
+          <div class="button-container">
+              <button class="enquiry-button">Enquiry Now</button>
+          </div>
+        </header>
+        
+
+<!-- Enquiry Modal -->
+<div id="enquiryModal" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 class="form-heading">Enquiry Now</h2>
+
+      <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Enter name">
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Enter email">
+
+          <label for="mobile">Mobile No. :</label>
+          <input type="text" id="mobile" placeholder="Enter mobile no.">
+
+          <label for="service">Choose Service :</label>
+          <select id="service">
+              <option>Select Your Service</option>
+              <option>Service 1</option>
+              <option>Service 2</option>
+          </select>
+
+          <label for="message">Message :</label>
+          <textarea id="message" placeholder="Write Your Message ..."></textarea>
+
+         <button type="submit">Submit</button>
+      </form>
+  </div>
+</div>
+
+ <!-- main-header end -->
+
+ <!-- Page Title -->
+
+ <section class="page-title" style="background-image: url(./image/download-bg.jpg);">
+
+  <div class="auto-container">
+
+      <div class="content-box">
+
+          <center><div class="title centred">
+
+              <h1>Pvt. Ltd, MSME/Udyam Registration
+
+          </div></center>
+
+          <ul class="bread-crumb clearfix">
+
+              <li><a href="index.html">Home</a></li>
+
+              <li>MSME</li>
+
+          </ul>
+
+      </div>
+
+  </div>
+
+</section>
+
+
+ <!-- Page Title -->
+
+
+
+        <!-- about-style-three -->
+
+        <section class="about-style-three bg-color-1">
+
+            <div class="auto-container">
+
+                <div class="row clearfix .align-items-center">                   
+
+                    <div class="col-lg-7 col-md-7 col-sm-12 content-column">
+
+                        <div class="content_block_5">
+                        
+
+                            <div class="content-box">
+
+                                <div class="sec-title">
+                                    
+                                    <h3>Pvt. Ltd, MSME/Udyam Registration</h3>
+
+                                    <div class="title-shape"></div>
+
+                                </div>
+
+                             
+
+						        <div class="text">                                  
+                                <p>Beginning a company is an exciting and gratifying process and these days, virtually everybody wants to operate a business. The selection of a corporate company is one of the essential choices before going into a business venture. This can be a proprietorship, corporation, joint corporation or private business. A good corporate model is <a href="#">private limited corporation</a>.</p>
+
+                                <p>A private limited company is a privately owned form of corporation. The establishment of a limited company helps the entrepreneur to keep separate their assets and finances from the business. One private limited company has many advantages:</p>
+
+                                    <img src="./image/cart/MSME.jpg" alt="">
+                                    
+                                </div>												
+
+                            </div>                                    
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-5 col-md-5 col-sm-12 content-column">
+
+                        <div class="content_block_5">
+                            <div class="content-box form-box">
+
+                                <div class="sec-title">                                
+
+                                    <h3>Enquiry Now</h3>                                   
+
+                                </div>
+
+                             
+
+						        <div class="text">
+                                      <form method="post" action="mailer.php">
+                                        <div class="form-group .appoint-form">
+                                        <label for="name" style="color:#fff;">Name:</label>
+                                            <input type="name" class="form-control" id="name" placeholder="Enter name" name="name" required>
+                                        </div>
+
+                                        <div class="form-group .appoint-form">
+                                        <label for="email" style="color:#fff;">Email:</label>
+                                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                        </div>
+
+                                        <div class="form-group .appoint-form">
+                                        <label for="mobile" style="color:#fff;">Mobile No. :</label>
+                                            <input type="text" class="form-control" id="mobile" placeholder="Enter mobile no." name="number" required>
+                                        </div>
+
+                                        <!-- <div class="form-group .appoint-form">
+                                        <label for="mobile" style="color:#fff;">Choose Service :</label>
+                                            <select name="service">
+                                                <option value="pvt. Ltd, MSME/Udyam Reg.">Pvt. Ltd, MSME/Udyam Reg.</option>
+                                            </select>
+                                        </div> -->
+
+                                        
+                                        <div class="form-group .appoint-form">
+                                        <label for="mobile" style="color:#fff; margin-top: 1rem;">Message :</label>                    
+                                            <textarea name="msg" placeholder="Write Your Message ..." class="message-textarea"></textarea>
+                                        </div>       
+                                        
+                                        <div class="appoint-submit" style="text-align: center;">    
+                                            <button type="submit" class="appointment-submit" name="submit">Submit</button>
+                                        </div>
+
+                                    </form>                                    
+                                </div>												
+
+                            </div>                                    
+
+                        </div>
+
+                    </div>                   
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- about-style-three end -->
+        
+        
+                
+            <div class="auto-container">    
+                
+               
+                
+                
+                
+                <div class="row clearfix .align-items-center pt-5">                   
+
+                    <div class="col-lg-12 col-md-12 col-sm-12 content-column">
+
+                        <div class="content_block_5">
+                        
+
+                            <div class="content-box">
+
+                                <div class="sec-title">
+                                    
+                                    <h3>limited liability</h3>
+
+                                    <div class="title-shape"></div>
+
+                                </div>
+
+						        <div class="text">                                  
+                              <p>A private corporation is viewed as a single entity i.e. the company is responsible for all the obligations and the related members are not directly liable if anything happens to the company. Responsibility for repayment of the company's debts and litigation rests with the client, and not with the lender.</p>
+                                </div>
+                                
+                                
+                                 <div class="sec-title">
+                                    
+                                    <h3>Tax Benefits</h3>
+
+                                    <div class="title-shape"></div>
+
+                                </div>
+
+						        <div class="text">                                  
+                                   <p>Some of the benefits of running a business as a private limited company is that you would potentially pay less tax than a regular trader. Small companies pay corporate tax on their taxable income and are excused from higher personal tax.</p>
+                                </div>
+                                
+                                
+                                
+                                 
+                                 <div class="sec-title">
+                                    
+                                    <h3>Separate legal body</h3>
+
+                                    <div class="title-shape"></div>
+
+                                </div>
+
+						        <div class="text">                                  
+                                 <p>There is a distinct presence of a private limited organization. The firm operates as a legal entity formed under the Act. A lawyer is a person who is neither normal nor human. The limited partnership functions as a single individual who is in possession of all the property and has the exclusive right to purchase, administer and dispose of the property.&nbsp;the transfer of shares in a private limited company is easy, it is not owned by its shareholders and stakeholders can not claim ownership of the company.</p>
+                               </div>
+
+
+
+
+  
+                                 <div class="sec-title">
+                                    
+                                    <h3>Funding</h3>
+
+                                    <div class="title-shape"></div>
+
+                                </div>
+
+						        <div class="text">                                  
+                                <p>Funding is vital to starting a company, growing and holding it the same. A company may need self-fund, associates, and family or debt and equity funds. Unlike ownerships, joint companies, and limited partnerships that can not issue shares, limited companies may issue shares and receive equity funding. As per the company act 2013, a corporation can sell shares to the public or accept public deposits and can raise capital more efficiently than other business structures.</p>
+                                </div>
+
+
+
+  
+                                 <div class="sec-title">
+                                    
+                                    <h3>Share-transfer</h3>
+
+                                    <div class="title-shape"></div>
+
+                                </div>
+
+						        <div class="text">                                  
+                                      <p>Compared with the ownerships and partnerships, the transfer of shares in a private limited company is easy. The company's shares tend to be movable property. It is easy to join or leave a company's membership, and pass ownership as well.</p>
+                              </div>
+
+
+
+  
+                                 <div class="sec-title">
+                                    
+                                    <h3>Authority to sue and investigate</h3>
+
+                                    <div class="title-shape"></div>
+
+                                </div>
+
+						        <div class="text">                                  
+                                       <p>A private limited corporation will bring legal action in court against a lawsuit. As an individual can bring legal action against another person, the corporation as a legal entity can also sue or be sued under its own name.</p>
+                               </div>
+                               
+                                 <div class="sec-title">
+                                    
+                                    <h3>Perpetual succession</h3>
+
+                                    <div class="title-shape"></div>
+
+                                </div>
+
+						        <div class="text">                                  
+                               <p>A corporation has perpetual succession that is they enjoy permanent succession because the corporation is their own legal body. The company's shareholders and employees/members will not affect the function and sustainability of the business even if they leave. The firm is unaffected by any member's death or departure, and the shares are distributed among other members. The business continues to exist and this is a very significant feature of a limited private company.</p>
+                               </div>
+                               
+                               
+                                  <div class="sec-title">
+                                    
+                                    <h3>Disclaimer</h3>
+
+                                    <div class="title-shape"></div>
+
+                                </div>
+
+						        <div class="text">                                  
+                            <p>The content of this post isn't considered to be professional or legal advice, We aren't responsible for any damages arising from your access to the location content &amp; must not be relied on or used as a substitute for legal advice from a lawyer professional in your jurisdiction. CARajput is among India's big digital compliance services platform which committed to helping people have started &amp; developed their businesses. We had started with the goal of creating it easier for start-ups to start out their business. Our main aim is to assist the businessman with applicable laws &amp; regulations compliance and providing support at each &amp; every level to make sure the business stays compliant and growing continuously. For any query, help or feedback you may in touch on <a href="sunriseipr@gmail.com">sunriseipr@gmail.com</a> or Call or what’s-up on +91 9818383866</p>                               </div>
+                                
+                                
+                            </div>                                    
+
+                        </div>
+
+                    </div>
+
+                </div>
+                
+                
+              
+    
+            </div>
+
+        </section>
+
+        <!-- about-style-three end -->
+
+   <!-- Years of experiance Section Start -->
+   <section class="experience-section section-padding">
+    <div class="container">
+        <div class="section-title text-center">
+            <h2>15 Years Of Experience As An Attorney Firm</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="content text-center">
+                    <p>The firm: SUNRISE TRADE MARK CO. is a full-service intellectual property and technology law firm focused<br> on rendering business-friendly legal advice.</p>
+                </div>
+                <div class="section-subtitle text-center">
+                    <h3>2007</h3>
+                    <h6>
+                        <i class="fas fa-sun"></i>
+                        <span> COMPANY ESTABLISHED </span>
+                        <i class="fas fa-sun"></i>
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Years of experiance Section End   -->
+
+
+
+
+
+
+
+        <!-- Footer Section -->
+        <div class="footer">
+          <!-- About Us Section -->
+          <div>
+            <h3>About Us</h3>
+            <p>
+              ‘A diverse and dynamic group‘, SUNRISE TRADE MARK CO. is a top flight
+              practice that protects and enforces IP assets from filing and
+              prosecuting patent and trade mark applications, through to IP
+              litigation, often concerning landmark cases.
+            </p>
+          </div>
+
+          <!-- Quick Links Section -->
+          <div>
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="trademark-registration.html">Trademark Registration</a></li>
+              <li><a href="Copyright.html">Copyright</a></li>
+              <li><a href="Design.html">Design</a></li>
+              <li><a href="iso.html">ISO</a></li>
+              <li><a href="Fssal.html">FSSAI (Food Licence)</a></li>
+              <li><a href="Msme.html">Pvt. Ltd, MSME/Udyam Reg.</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Us Section -->
+          <div>
+            <h3>Contact Us</h3>
+            <p>
+              <strong>Location</strong><br />Block B-4, Sunrise House, Gali No.-9,
+              Harsh Vihar, New Delhi-93
+            </p>
+            <p><strong>Phone</strong><br />+91 9818383866</p>
+            <p><strong>Email</strong><br />sunriseipr@gmail.com</p>
+          </div>
+
+          <!-- Enquiry Box Section -->
+          <div class="enquiry-box">
+            <h4>Enquiry Your Query</h4>
+            <p>Here you can enquire about issues and make requests.</p>
+            <button>ENQUIRY NOW</button>
+          </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="footer-copyright">
+          &copy; 2022 By <a href="#">Sunrise Trademark Co.</a> All Rights Reserved.
+        </div>
+
+        <!-- Font Awesome for icons (optional, include if you want icons in contact info) -->
+        <script
+          src="https://kit.fontawesome.com/a076d05399.js"
+          crossorigin="anonymous"
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Bootstrap and JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+
+        <script src="./js/script.js"></script>
+        <script src="./js/swiper.js"></script>  </body>
+    </html>

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- Font Awesome CDN for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Responsive Header</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style1.css" />
+
+    <!-- <link rel="stylesheet" href="./css/Responsive.css" /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+
+    <!-- jQuery (required by Owl Carousel) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  </head>
+
+  <body>
+    <div class="top-bar">
+      <div class="left-section">
+        <div class="since" style="color: #cc0000">Since: 2007</div>
+        <div class="double-vertical-line">
+          <div class="vertical-line"></div>
+        </div>
+      </div>
+
+      <div class="right-section">
+        <div class="contact-info">
+          <span><i class="fa fa-space"></i> +91 9818333866</span>
+          <div class="double-vertical-line">
+            <div class="vertical-line"></div>
+          </div>
+          <span><i class="fa fa-space"></i> sunriseipr@gmail.com</span>
+        </div>
+        <div class="icon-group">
+          <i class="fa fa-space" style="padding: 2px"></i>
+          <i class="fa fa-space" style="padding: 3px"></i>
+          <i class="fa fa-space" style="padding: 4px"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <img src="./image/logo.jpeg" alt="Sunrise Logo" class="logo" />
+
+      <!-- Hamburger Icon for Mobile -->
+      <div id="hamburger-icon" class="hamburger-icon" onclick="toggleMenu()">
+        ☰
+      </div>
+
+      <!-- Close Icon for Mobile -->
+      <div
+        id="close-icon"
+        class="close-icon"
+        onclick="toggleMenu()"
+        style="display: none"
+      >
+        ✕
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav>
+        <ul id="nav-links" class="nav-links">
+          <li><a href="index.html" class="">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li class="dropdown">
+            <a href="blog.html" class="dropbtn">Practice Areas</a>
+            <div class="dropdown-content">
+              <a href="trademark-registration.html">Trademark Registration</a>
+              <a href="Design.html">Design</a>
+              <a href="Copyright.html">Copyright</a>
+              <a href="iso.html">ISO</a>
+              <a href="Fssal.html">FSSAI (Food Licence)</a>
+              <a href="Msme.html">Pvt. Ltd, MSME/Udyam Reg.</a>
+            </div>
+          </li>
+          <li><a href="blog.html">IP News & Events</a></li>
+          <li><a href="Careers.html">Careers</a></li>
+          <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <!-- Enquiry Button -->
+      <div class="button-container">
+        <button class="enquiry-button">Enquiry Now</button>
+      </div>
+    </header>
+
+    <!-- Enquiry Modal -->
+    <div id="enquiryModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 class="form-heading">Enquiry Now</h2>
+
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Enter name" />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Enter email" />
+
+          <label for="mobile">Mobile No. :</label>
+          <input type="text" id="mobile" placeholder="Enter mobile no." />
+
+          <label for="service">Choose Service :</label>
+          <select id="service">
+            <option>Select Your Service</option>
+            <option>Service 1</option>
+            <option>Service 2</option>
+          </select>
+
+          <label for="message">Message :</label>
+          <textarea
+            id="message"
+            placeholder="Write Your Message ..."
+          ></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- main-header end -->
+
+    <!-- Page Title -->
+
+    <section
+      class="page-title"
+      style="background-image: url(./image/download-bg.jpg)"
+    >
+      <div class="auto-container">
+        <div class="content-box">
+          <center>
+            <div class="title centred">
+              <h1>CONTACT US</h1>
+            </div>
+          </center>
+
+          <ul class="bread-crumb clearfix">
+            <li><a href="#">Home</a></li>
+
+            <li>Contact Us</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page Title -->
+
+    <!-- contact-information -->
+
+    <section class="contact-information bg-color-1">
+      <div class="auto-container">
+        <div class="row clearfix">
+          <div class="col-lg-6 col-md-6 col-sm-12 content-column">
+            <div class="content_block_12">
+              <div class="content-box">
+                <div class="sec-title">
+                  <h6>
+                    <i class="fa-thin fa-square-full"></i><span>Make Connecting</span>
+                  </h6>
+
+                  <h2>Contact Information</h2>
+
+                  <div class="title-shape"></div>
+                </div>
+
+                <div class="text">
+                  <p>
+                    We understand that it is important for you access our
+                    services in a way time.
+                  </p>
+
+                  <h4>Chamber Address</h4>
+                  <br />
+
+                  <p>
+                    Chamber No. 528 Lawyers Chambers Block, Karkar Dooma
+                    Shahdara New Delhi-92
+                  </p>
+
+                  <a href="#"
+                    >Get Direction<i class="fa-thin fa-square-full"></i>
+                  </a>
+                </div>
+
+
+
+                          <div class="social-box">
+              <h4>Social Media</h4>
+              <ul class="social-style-one clearfix">
+                <li>
+                  <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                </li>
+              </ul>
+            </div>
+
+
+
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-12 col-sm-12 content-column">
+            <div class="content_block_13">
+              <div class="content-box">
+                <div class="single-item">
+                  <div class="icon-box">
+                    <i class="fa-thin fa-square-full"></i>
+                  </div>
+
+                  <ul class="info clearfix">
+                    <li>
+                      <h5>E-Mail</h5>
+
+                      <p><a href="#">sunriseipr@gmail.com</a></p>
+                      <p><a href="#">sunitaadvocateipr@gmail.com</a></p>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="single-item">
+                  <div class="icon-box">
+                    <i class="fa-thin fa-square-full"></i>
+                  </div>
+
+                  <ul class="info clearfix">
+                    <li>
+                      <h5>Telephone</h5>
+
+                      <p><a href="">+91 9818383866</a></p>
+                    </li>
+
+                    <li>
+                      <p><a href="">+91 9650839235</a></p>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="single-item">
+                  <div class="icon-box"><i class="fa-thin fa-square-full"></i></div>
+
+                  <ul class="info clearfix">
+                    <li>
+                      <h5>Mon - Sat</h5>
+
+                      <p>10.00 AM to 6.00 PM</p>
+                    </li>
+
+                    <li>
+                      <h5>Sunday</h5>
+
+                      <p>Sunday Off</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact-information end -->
+
+    <!-- contact-style-two -->
+
+    <section class="contact-style-two sec-pad">
+      <div class="auto-container">
+        <div class="form-inner">
+          <center><div class="sec-title centred">
+           <h6>
+              <i class="fa-thin fa-square-full"></i><span>Drop a Line</span
+              ><i class="fa-thin fa-square-full"></i>
+            </h6>
+
+            <h2>Get In Touch</h2>
+
+            <div class="title-shape"></div>
+          </div></center>
+
+          <form method="post" action="" id="contact-form" class="default-form">
+            <div class="row clearfix">
+              <div class="col-lg-6 col-md-6 col-sm-12 big-column">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    required=""
+                  />
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email Address"
+                    required=""
+                  />
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="subject"
+                    required=""
+                    placeholder="Subject"
+                  />
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12 big-column">
+                <div class="form-group">
+                  <textarea
+                    name="msg"
+                    placeholder="Write Your Message ..."
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="col-lg-12 col-md-12 col-sm-12 big-column">
+                <div class="message-btn centred">
+                  <button class="theme-btn" type="submit" name="submit">
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="map-inner">
+          <div>
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7014.206554217908!2d77.05399759111143!3d28.476436233822408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1907349687e1%3A0xf187f529e5110419!2sSukhrali%2C%20Sector%2017%2C%20Gurugram%2C%20Haryana%20122022!5e0!3m2!1sen!2sin!4v1731168778626!5m2!1sen!2sin" 
+            width="1200" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact-style-two end -->
+
+    <!-- Footer Section -->
+    <div class="footer">
+      <!-- About Us Section -->
+      <div>
+        <h3>About Us</h3>
+        <p>
+          ‘A diverse and dynamic group‘, SUNRISE TRADE MARK CO. is a top flight
+          practice that protects and enforces IP assets from filing and
+          prosecuting patent and trade mark applications, through to IP
+          litigation, often concerning landmark cases.
+        </p>
+      </div>
+
+      <!-- Quick Links Section -->
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="trademark-registration.html">Trademark Registration</a></li>
+          <li><a href="Copyright.html">Copyright</a></li>
+          <li><a href="Design.html">Design</a></li>
+          <li><a href="iso.html">ISO</a></li>
+          <li><a href="Fssal.html">FSSAI (Food Licence)</a></li>
+          <li><a href="Msme.html">Pvt. Ltd, MSME/Udyam Reg.</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Us Section -->
+      <div>
+        <h3>Contact Us</h3>
+        <p>
+          <strong>Location</strong><br />Block B-4, Sunrise House, Gali No.-9,
+          Harsh Vihar, New Delhi-93
+        </p>
+        <p><strong>Phone</strong><br />+91 9818383866</p>
+        <p><strong>Email</strong><br />sunriseipr@gmail.com</p>
+      </div>
+
+      <!-- Enquiry Box Section -->
+      <div class="enquiry-box">
+        <h4>Enquiry Your Query</h4>
+        <p>Here you can enquire about issues and make requests.</p>
+        <button>ENQUIRY NOW</button>
+      </div>
+    </div>
+
+    <!-- Copyright Section -->
+    <div class="footer-copyright">
+      &copy; 2022 By <a href="#">Sunrise Trademark Co.</a> All Rights Reserved.
+    </div>
+
+    <!-- Font Awesome for icons (optional, include if you want icons in contact info) -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap and JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/swiper.js"></script>
+  </body>
+</html>
